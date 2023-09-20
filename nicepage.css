@@ -37346,6 +37346,10 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 
+ /*begin-variables custom-site-css*/textarea { 
+	resize: vertical;
+	min-height: 200px;
+}/*end-variables custom-site-css*/
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
