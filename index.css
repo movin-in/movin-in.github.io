@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/pexels-lexi-lauwers-2921137.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("images/pexels-lexi-lauwers-2921137.jpg");
   background-position: 50% 50%;
 }
 
@@ -10,7 +10,6 @@
 .u-section-1 .u-group-1 {
   width: 962px;
   min-height: 444px;
-  height: auto;
   margin: 60px auto;
 }
 
@@ -70,7 +69,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   background-image: none;
   border-style: none;
   margin: 29px auto 0;
@@ -83,7 +82,6 @@
     margin-right: initial;
     margin-left: initial;
     width: auto;
-    height: auto;
   }
 
   .u-section-1 .u-text-1 {
@@ -1445,7 +1443,11 @@
   .u-section-8 .u-image-1 {
     min-height: 324px;
   }
-}.u-section-9 .u-sheet-1 {
+} .u-section-9 {
+  background-image: none;
+}
+
+.u-section-9 .u-sheet-1 {
   min-height: 630px;
 }
 
