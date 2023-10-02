@@ -43,36 +43,26 @@
   letter-spacing: 0px;
   font-size: 1rem;
   text-transform: none;
-  width: 409px;
   font-family: Poppins-Light;
-  margin: 6px auto 0;
+  width: 409px;
+  margin: 12px auto 0;
 }
 
 .u-section-1 .u-btn-1 {
   background-image: none;
   border-style: none none solid;
+  margin-top: 2px;
   padding: 0;
 }
 
 .u-section-1 .u-btn-2 {
-  background-image: none;
-  border-style: solid;
-  padding: 0;
-}
-
-.u-section-1 .u-btn-3 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-1 .u-btn-4 {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
   background-image: none;
   border-style: none;
-  margin: 29px auto 0;
+  margin: 23px auto 0;
   padding: 14px 42px 15px 41px;
 }
 

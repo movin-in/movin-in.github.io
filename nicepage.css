@@ -37271,6 +37271,8 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-nav-1 {
   font-size: 1.0625rem;
   letter-spacing: 0px;
+  font-weight: normal;
+  font-family: Poppins-Regular;
 }
 
 .u-header .u-nav-2 {
@@ -37284,11 +37286,6 @@ a.u-link.u-text-hover-grey-90:hover {
   margin: -28px auto 21px 0;
 }
 @media (max-width: 1199px) {
-  .u-header .u-nav-1 {
-    font-weight: normal;
-    font-family: Poppins-Regular;
-  }
-
   .u-header .u-text-1 {
     width: auto;
     margin-top: -27px;
