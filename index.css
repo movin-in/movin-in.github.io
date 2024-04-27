@@ -64,9 +64,9 @@
 .u-section-1 .u-btn-3 {
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 1.5rem;
   border-style: none;
+  font-family: Poppins-Regular;
   margin: 27px auto 0;
   padding: 14px 42px 15px 41px;
 }
@@ -85,6 +85,10 @@
     --animation-custom_in-scale: 1;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .u-section-1 .u-btn-3 {
+    font-weight: normal;
   }
 }
 
@@ -910,6 +914,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
+  font-family: Poppins-Regular;
   margin: 27px auto 0;
 }
 
@@ -1491,7 +1496,7 @@
 }
 
 .u-section-9 .u-btn-1 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
@@ -1635,6 +1640,10 @@
   height: 340px;
   width: 570px;
   margin: 20px auto 0;
+}
+
+.u-section-10 .u-btn-1 {
+  font-family: Poppins-Regular;
 }
 
 @media (max-width: 767px) {
