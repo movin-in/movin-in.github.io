@@ -67,6 +67,7 @@
   font-size: 1.5rem;
   border-style: none;
   font-family: Poppins-Regular;
+  font-weight: normal;
   margin: 27px auto 0;
   padding: 14px 42px 15px 41px;
 }
@@ -85,10 +86,6 @@
     --animation-custom_in-scale: 1;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .u-section-1 .u-btn-3 {
-    font-weight: normal;
   }
 }
 
@@ -863,7 +860,7 @@
   }
 } .u-section-6 {
   background-image: none;
-  min-height: 494px;
+  min-height: 625px;
 }
 
 .u-section-6 .u-layout-wrap-1 {
@@ -872,12 +869,12 @@
 }
 
 .u-section-6 .u-layout-cell-1 {
-  min-height: 494px;
+  min-height: 625px;
   background-image: none;
 }
 
 .u-section-6 .u-container-layout-1 {
-  padding: 30px 30px 3px;
+  padding: 30px;
 }
 
 .u-section-6 .u-text-1 {
@@ -918,14 +915,18 @@
   margin: 27px auto 0;
 }
 
-.u-section-6 .u-image-1 {
-  min-height: 494px;
-  background-image: url("images/e8823c695e8508609fc808256b97bb4bd28c32393d97861426a3bd37f272fb3d513926023f963cc0a3508481375fb00d41fe4cc638254140801594_1280.jpg");
-  background-position: 50% 50%;
+.u-section-6 .u-layout-cell-2 {
+  min-height: 625px;
 }
 
 .u-section-6 .u-container-layout-2 {
   padding: 30px;
+}
+
+.u-section-6 .u-image-1 {
+  width: 463px;
+  height: 502px;
+  margin: 25px 27px 0 auto;
 }
 
 @media (max-width: 1199px) {
@@ -951,8 +952,16 @@
     margin-right: 0;
   }
 
+  .u-section-6 .u-layout-cell-2 {
+    min-height: 630px;
+    background-position: 50% 50%;
+  }
+
   .u-section-6 .u-image-1 {
-    min-height: 568px;
+    width: 410px;
+    height: 444px;
+    margin-top: 62px;
+    margin-right: auto;
   }
 }
 
@@ -973,8 +982,14 @@
     font-size: 1rem;
   }
 
+  .u-section-6 .u-layout-cell-2 {
+    min-height: 635px;
+  }
+
   .u-section-6 .u-image-1 {
-    min-height: 423px;
+    width: 300px;
+    height: 325px;
+    margin-top: 0;
   }
 }
 
@@ -998,8 +1013,8 @@
     margin-top: 21px;
   }
 
-  .u-section-6 .u-image-1 {
-    min-height: 294px;
+  .u-section-6 .u-layout-cell-2 {
+    min-height: 410px;
   }
 
   .u-section-6 .u-container-layout-2 {
@@ -1029,10 +1044,6 @@
 
   .u-section-6 .u-btn-1 {
     margin-top: 30px;
-  }
-
-  .u-section-6 .u-image-1 {
-    min-height: 185px;
   }
 } .u-section-7 {
   background-image: none;
