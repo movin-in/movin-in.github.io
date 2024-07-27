@@ -12,6 +12,30 @@
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.8.2, nicepage.com">
+    <script src="https://www.google.com/recaptcha/api.js?render=6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4"></script>
+    <script> window.onload = function(){	  
+  const form1 = document.getElementById('form1');
+form1.addEventListener('submit', function(event) {
+    event.preventDefault();
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4', {action: 'submit'}).then(function(token) {
+            form1.querySelector('#g-recaptcha-response').value = token;
+            form1.submit();
+        });
+    });
+});
+const form2 = document.getElementById('form2');
+form2.addEventListener('submit', function(event) {
+    event.preventDefault();
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4', {action: 'submit'}).then(function(token) {
+            form2.querySelector('#g-recaptcha-response').value = token;
+            form2.submit();
+        });
+    });
+});
+} </script>
+    
     <link rel="icon" href="images/favicon.ico">
     
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -103,7 +127,7 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
             <p class="u-custom-font u-text u-text-body-alt-color u-text-3">Built with&nbsp; <a href="https://react.dev/" class="u-active-none u-border-2 u-border-active-custom-color-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">React</a>, Powered by <a href="https://stripe.com/" class="u-active-none u-border-2 u-border-active-custom-color-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-white u-top-left-radius-0 u-top-right-radius-0 u-btn-2">Stripe</a>
             </p>
             <div class="u-form u-form-1">
-              <form action="https://formsubmit.co/239c52c784d091cfeaa01cf10be41e31" method="POST" class="u-clearfix u-form-custom-backend u-form-horizontal u-form-spacing-0 u-inner-form" style="padding: 15px;" source="custom" redirect="true">
+              <form id="form1" action="https://usebasin.com/f/dfa6479641e4" method="POST" class="u-clearfix u-form-custom-backend u-form-horizontal u-form-spacing-0 u-inner-form" style="padding: 15px;" source="custom" redirect="true">
                 <div class="u-form-email u-form-group u-label-none">
                   <label for="email-4542" class="u-label">Email</label>
                   <input type="email" placeholder="Enter your email address" id="email-4542" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
@@ -115,6 +139,8 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
                 <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                 <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
                 <input type="hidden" value="" name="recaptchaResponse">
+                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                <input type="hidden" name="g-recaptcha-version" value="v3">
               </form>
             </div>
           </div>
@@ -130,7 +156,7 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
-                <div class="u-container-layout u-valign-top u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/1.png" alt=""></span>
+                <div class="u-container-layout u-valign-top u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/2.png" alt=""></span>
                   <p class="u-align-center u-text u-text-3">Find your property.</p>
                 </div>
               </div>
@@ -158,7 +184,7 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
-                <div class="u-container-layout u-valign-top u-container-layout-3"><span class="u-file-icon u-icon u-text-white u-icon-3"><img src="images/2.png" alt=""></span>
+                <div class="u-container-layout u-valign-top u-container-layout-3"><span class="u-file-icon u-icon u-text-white u-icon-3"><img src="images/3.png" alt=""></span>
                   <p class="u-align-center u-text u-text-5">Checkout.</p>
                 </div>
               </div>
@@ -312,7 +338,7 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
         <div class="u-layout">
           <div class="u-layout-row">
             <div class="u-container-style u-custom-color-4 u-layout-cell u-left-cell u-size-24 u-layout-cell-1">
-              <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/3.png" alt=""></span>
+              <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/9.png" alt=""></span>
                 <h2 class="u-align-center u-custom-font u-text u-text-1">Agency-Oriented<br>
                 </h2>
                 <p class="u-align-center u-custom-font u-text u-text-2"> Movin' In is designed to work with multiple agencies. Agencies can manage their properties, customers and bookings from the backend. Movin' In can also work with only one agency as well.</p>
@@ -326,13 +352,13 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
       </div>
     </section>
     <section class="u-align-center u-clearfix u-white u-section-8" id="sec-b091">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-align-center-sm u-align-center-xs u-border-10 u-border-palette-1-base u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
           <div class="u-container-layout u-valign-top u-container-layout-1">
             <h3 class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-default u-text-1"> How can we help?</h3>
             <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-default u-text-2"> Fill out our contact form and we will get back to you ASAP.</p>
             <div class="u-form u-form-1">
-              <form action="https://formsubmit.co/239c52c784d091cfeaa01cf10be41e31" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form" redirect="true">
+              <form id="form2" action="https://usebasin.com/f/dfa6479641e4" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form" redirect="true">
                 <div class="u-form-group u-form-name">
                   <label for="name-a97b" class="u-form-control-hidden u-label">Name</label>
                   <input type="text" placeholder="Enter your name" id="name-a97b" name="name" class="u-border-1 u-border-grey-30 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white" required="">
@@ -352,6 +378,8 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
                 <div class="u-form-send-message u-form-send-success"></div>
                 <div class="u-form-send-error u-form-send-message"></div>
                 <input type="hidden" value="" name="recaptchaResponse">
+                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                <input type="hidden" name="g-recaptcha-version" value="v3">
               </form>
             </div>
           </div>
