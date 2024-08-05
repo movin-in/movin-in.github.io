@@ -1319,7 +1319,6 @@
 .u-section-8 .u-group-1 {
   width: 700px;
   min-height: 567px;
-  height: auto;
   margin: 61px auto 2px;
 }
 
@@ -1348,10 +1347,6 @@
 }
 
 @media (max-width: 1199px) {
-  .u-section-8 .u-group-1 {
-    height: auto;
-  }
-
   .u-section-8 .u-text-1 {
     --animation-custom_in-translate_x: -200px;
     --animation-custom_in-translate_y: 0px;
