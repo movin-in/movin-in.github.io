@@ -1313,13 +1313,14 @@
 }
 
 .u-section-8 .u-sheet-1 {
-  min-height: 630px;
+  min-height: 728px;
 }
 
 .u-section-8 .u-group-1 {
   width: 700px;
   min-height: 567px;
-  margin: 61px auto 2px;
+  height: auto;
+  margin: 60px auto;
 }
 
 .u-section-8 .u-container-layout-1 {
@@ -1347,6 +1348,10 @@
 }
 
 @media (max-width: 1199px) {
+  .u-section-8 .u-group-1 {
+    height: auto;
+  }
+
   .u-section-8 .u-text-1 {
     --animation-custom_in-translate_x: -200px;
     --animation-custom_in-translate_y: 0px;
