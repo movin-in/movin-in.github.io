@@ -366,7 +366,7 @@
 .u-section-3 .u-text-1 {
   font-size: 1.875rem;
   font-weight: 400;
-  font-family: Poppins-Regular;
+  font-family: Poppins-Regular-35;
   margin: 42px 0 0;
 }
 
@@ -386,6 +386,7 @@
 .u-section-3 .u-text-3 {
   font-size: 1.875rem;
   font-weight: 400;
+  font-family: Poppins-Regular-35;
   margin: 42px 28px 0 14px;
 }
 
@@ -406,7 +407,7 @@
 .u-section-3 .u-text-5 {
   font-size: 1.875rem;
   font-weight: 400;
-  font-family: Poppins-Regular;
+  font-family: Poppins-Regular-35;
   margin: 72px 25px 0;
 }
 
@@ -610,7 +611,14 @@
   letter-spacing: 0px;
   font-weight: 400;
   text-transform: none;
+  font-family: Poppins-Regular-35;
   margin: 19px 1px 0;
+}
+
+.u-section-4 .u-btn-1 {
+  background-image: none;
+  border-style: none none solid;
+  padding: 0;
 }
 
 .u-section-4 .u-layout-cell-2 {
@@ -757,7 +765,7 @@
 
 .u-section-5 .u-image-1 {
   min-height: 403px;
-  background-image: url("images/50473f3e4e2f6a8014e3fe9ca551da132e0cbbe66489a92f8df448a441dc9c267e8885220e02ef8ab1a4c331ff788e61449b93a6750396b3e33d99_1280.jpg");
+  background-image: url("np://user.desktop.nicepage.com/Site_23918722/images/50473f3e4e2f6a8014e3fe9ca551da132e0cbbe66489a92f8df448a441dc9c267e8885220e02ef8ab1a4c331ff788e61449b93a6750396b3e33d99_1280.jpg?rand=1823");
   background-position: 50% 50%;
 }
 
@@ -774,8 +782,10 @@
 }
 
 .u-section-5 .u-text-1 {
-  font-weight: 700;
+  font-family: Poppins-Regular-35;
   font-size: 2.25rem;
+  font-weight: 700;
+  background-image: none;
   margin: 0 0 0 20px;
 }
 
@@ -906,7 +916,7 @@
 }
 
 .u-section-6 .u-text-1 {
-  font-family: Poppins-Regular;
+  font-family: Poppins-Regular-35;
   margin: 0 0 0 5px;
 }
 
@@ -926,7 +936,7 @@
 }
 
 .u-section-6 .u-text-3 {
-  font-family: Poppins-Regular;
+  font-family: Poppins-Regular-35;
   margin: 39px 6px 0 0;
 }
 
@@ -959,7 +969,6 @@
 }
 
 .u-section-6 .u-text-6 {
-  font-family: Poppins-Regular;
   margin: 40px 0 0;
 }
 
@@ -993,7 +1002,6 @@
 }
 
 .u-section-6 .u-text-9 {
-  font-family: Poppins-Regular;
   margin: 40px 0 0;
 }
 
@@ -1038,12 +1046,20 @@
     height: 134px;
   }
 
+  .u-section-6 .u-text-6 {
+    font-family: Poppins-Regular-35;
+  }
+
   .u-section-6 .u-layout-cell-3 {
     min-height: 490px;
   }
 
   .u-section-6 .u-image-3 {
     height: 137px;
+  }
+
+  .u-section-6 .u-text-9 {
+    font-family: Poppins-Regular-35;
   }
 }
 
@@ -1197,7 +1213,6 @@
 .u-section-7 .u-text-2 {
   font-size: 1.125rem;
   font-style: normal;
-  font-family: Poppins-Regular;
   margin: 26px 0 0;
 }
 
@@ -1241,6 +1256,10 @@
     --animation-custom_in-opacity: 0;
     --animation-custom_in-rotate: 0deg;
     --animation-custom_in-scale: 1;
+  }
+
+  .u-section-7 .u-text-2 {
+    font-family: Poppins-Regular-35;
   }
 
   .u-section-7 .u-image-1 {
@@ -1342,8 +1361,32 @@
   margin: 20px auto 0;
 }
 
+.u-section-8 .u-label-1 {
+  font-family: Poppins-Regular-35;
+}
+
+.u-section-8 .u-input-1 {
+  font-family: Poppins-Regular-35;
+}
+
+.u-section-8 .u-label-2 {
+  font-family: Poppins-Regular-35;
+}
+
+.u-section-8 .u-input-2 {
+  font-family: Poppins-Regular-35;
+}
+
+.u-section-8 .u-label-3 {
+  font-family: Poppins-Regular-35;
+}
+
+.u-section-8 .u-input-3 {
+  font-family: Poppins-Regular-35;
+}
+
 .u-section-8 .u-btn-1 {
-  font-family: Poppins-Regular;
+  font-family: Poppins-Regular-35;
 }
 
 @media (max-width: 1199px) {
@@ -1404,4 +1447,9 @@
   font-style: normal;
   font-weight: 400;
   src: url(fonts/Poppins-Light.ttf);
+}@font-face {
+  font-family: 'Poppins-Regular-35';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Poppins-Regular-35.ttf);
 }

@@ -37311,6 +37311,8 @@ a.u-link.u-text-hover-grey-90:hover {
         
         
         
+        
+        
         --theme-sheet-width-xl: 1140px;
         --theme-sheet-width-lg: 940px;
         --theme-sheet-width-md: 720px;
@@ -37341,6 +37343,7 @@ a.u-link.u-text-hover-grey-90:hover {
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-family: Poppins-Regular-35;
         }
         h1:not(.u-title)
         {
@@ -37407,6 +37410,7 @@ a.u-link.u-text-hover-grey-90:hover {
         font-size: 0.875rem;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-family: Poppins-Regular-35;
         }
         p:not(.u-text-variant)
         {
@@ -37427,7 +37431,7 @@ a.u-link.u-text-hover-grey-90:hover {
         border-width: 4px;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-family: Lato,sans-serif;
+        font-family: Poppins-Regular-35;
         }
         .u-metadata
         {
@@ -37438,13 +37442,13 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
-        font-family: Poppins-Regular;
+        font-family: Poppins-Regular-35;
         }
         ol
         {
         margin-top: 20px;
         margin-bottom: 20px;
-        font-family: Poppins-Regular;
+        font-family: Poppins-Regular-35;
         }
         .u-post-content
         {
@@ -37623,7 +37627,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-nav-1 {
-  font-family: Poppins-Regular;
+  font-family: Poppins-Regular-35;
   font-size: 1.0625rem;
 }
 
@@ -37632,9 +37636,8 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-text-1 {
-  font-weight: 400;
   font-size: 1rem;
-  font-family: Poppins-Regular;
+  background-image: none;
   margin: -28px auto 21px 0;
 }
 @media (max-width: 1199px) {
@@ -37644,9 +37647,11 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-text-1 {
+    font-weight: normal;
     width: auto;
     margin-top: -27px;
     margin-bottom: 21px;
+    font-family: Poppins-SemiBold;
   }
 }
 @media (max-width: 991px) {
@@ -37674,14 +37679,17 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-text-1 {
-  width: 417px;
-  font-family: Poppins-Regular;
   font-size: 0.875rem;
-  margin: 49px auto;
+  width: 417px;
+  margin: 48px auto 50px;
 }
 @media (max-width: 1199px) {
   .u-footer .u-sheet-1 {
     min-height: 99px;
+  }
+
+  .u-footer .u-text-1 {
+    font-family: Poppins-Regular-35;
   }
 }
 @media (max-width: 991px) {
