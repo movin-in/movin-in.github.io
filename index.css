@@ -61,6 +61,12 @@
   padding: 0;
 }
 
+.u-section-1 .u-btn-3 {
+  background-image: none;
+  border-style: solid;
+  padding: 0;
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
     margin-right: initial;
