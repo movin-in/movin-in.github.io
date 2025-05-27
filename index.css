@@ -25,7 +25,7 @@
   text-transform: none;
   font-weight: 700;
   font-family: Poppins-SemiBold;
-  margin: 0 55px;
+  margin: 8px 55px 0;
 }
 
 .u-section-1 .u-text-2 {
@@ -61,20 +61,6 @@
   padding: 0;
 }
 
-.u-section-1 .u-form-1 {
-  height: 79px;
-  width: 447px;
-  margin: 9px auto 0;
-}
-
-.u-section-1 .u-btn-3 {
-  border-style: none;
-  font-family: Poppins-Regular;
-  text-transform: uppercase;
-  background-image: none;
-  padding: 11px 30px;
-}
-
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
     margin-right: initial;
@@ -86,6 +72,7 @@
     animation-duration: 1000ms;
     width: 744px;
     --animation-custom_in-scale: 1;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -123,10 +110,6 @@
 
   .u-section-1 .u-text-3 {
     font-size: 0.75rem;
-    width: 340px;
-  }
-
-  .u-section-1 .u-form-1 {
     width: 340px;
   }
 } .u-section-2 {
@@ -765,7 +748,7 @@
 
 .u-section-5 .u-image-1 {
   min-height: 403px;
-  background-image: url("np://user.desktop.nicepage.com/Site_23918722/images/50473f3e4e2f6a8014e3fe9ca551da132e0cbbe66489a92f8df448a441dc9c267e8885220e02ef8ab1a4c331ff788e61449b93a6750396b3e33d99_1280.jpg?rand=1823");
+  background-image: url("np://user.desktop.nicepage.com/Site_469108840/images/50473f3e4e2f6a8014e3fe9ca551da132e0cbbe66489a92f8df448a441dc9c267e8885220e02ef8ab1a4c331ff788e61449b93a6750396b3e33d99_1280.jpg?rand=1823");
   background-position: 50% 50%;
 }
 
