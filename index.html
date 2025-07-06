@@ -1,365 +1,313 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="open-source, rental">
-    <meta name="description" content="Open Source Rental Property Management Platform with Mobile App">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Movin' In - Open Source Rental Property Management Platform</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="index.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 4.8.2, nicepage.com">
-    
-    <link rel="icon" href="images/favicon.ico">
-    
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "movinin"
-}</script>
-    <meta name="theme-color" content="#1c2122">
-    <meta property="og:title" content="Movin' In - Open Source Rental Property Management Platform">
-    <meta property="og:description" content="Open Source Rental Property Management Platform with Mobile App">
-    <meta property="og:type" content="website">
-  <script>
-    function gdprConfirmed() {
-        return true;
-    }
-    if (gdprConfirmed()) {
-    document.write("\
-    \
-    <!-- Google Analytics -->\
-    <gascript async src=\"https://www.googletagmanager.com/gtag/js?id=G-PZHVBZFNXT\"></gascript>\
-    <gascript>\
-        window.dataLayer = window.dataLayer || [];\
-        function gtag(){dataLayer.push(arguments);}\
-        gtag('js', new Date());\
-        gtag('config', 'G-PZHVBZFNXT');\
-    </gascript>\
-    <!-- End Google Analytics -->\
-    ".replace(/gascript/g, 'script'));
-    }
-    </script><script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
 
-  gtag('config', 'AW-1007019023');
-  gtag('event', 'conversion', {'send_to': 'AW-1007019023/pJgYCMKBuOYYEI_Il-AD'})
-</script></head>
-  <body data-home-page="index.html" data-home-page-title="index" class="u-body u-overlap u-overlap-contrast u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-ef8c"><div class="u-clearfix u-sheet u-sheet-1">
-        <nav class="u-align-left u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD">
-          <div class="menu-collapse u-custom-font" style="font-size: 1.0625rem; letter-spacing: 0px; font-weight: 400; font-family: Poppins-Regular-35;">
-            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#" style="padding: 1px 0px; font-size: calc(1em + 2px);">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style="undefined"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5c50"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-5c50" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
-</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="open-source, property rental">
+  <meta name="description" content="Open Source Rental Property Management Platform">
+  <title>Movin' In - Open Source Rental Property Management Platform</title>
+  <meta property="og:title" content="Movin' In - Open Source Rental Property Management Platform">
+  <meta property="og:description"
+    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties.">
+  <meta property="og:url" content="https://movin-in.github.io">
+  <link rel="canonical" href="https://movin-in.github.io">
+  <link rel="icon" href="/favicon.ico">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZHVBZFNXT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() { dataLayer.push(arguments) }
+    gtag('js', new Date())
+    gtag('config', 'G-PZHVBZFNXT')
+  </script>
+  <!-- End Google Analytics -->
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="title-wrapper">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="icon"></span>
+        </button>
+        <h1 data-i18n="title">Movin' In</h1>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#features" data-i18n="nav.features">Features</a></li>
+          <li><a href="#demo" data-i18n="nav.demo">Demo</a></li>
+          <li><a href="#support" data-i18n="nav.support">Support</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="https://github.com/aelassas/movinin/wiki" target="_blank" rel="noopener noreferrer">Docs</a>
+          </li>
+          <!-- <li class="nav-github">
+            <span class="github-button-wrapper">
+              <a class="github-button" href="https://github.com/aelassas/movinin" data-icon="octicon-star"
+                data-show-count="true" aria-label="Star aelassas/movinin on GitHub">
+                Star
+              </a>
+            </span>
+          </li> -->
+        </ul>
+        <ul class="nav-right">
+          <li>
+            <div class="lang-switcher">
+              <button id="lang-toggle" aria-expanded="false" aria-label="Language" class="lang-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" aria-hidden="true" data-slot="icon" height="20">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802">
+                  </path>
+                </svg>
+              </button>
+              <ul id="lang-menu" class="lang-menu" hidden>
+                <li><button data-lang="en">English</button></li>
+                <li><button data-lang="fr">Français</button></li>
+                <li><button data-lang="es">Español</button></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" class="theme-toggle-btn">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"
+                style="display:none;">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a href="https://github.com/aelassas/movinin" target="_blank" rel="noopener noreferrer"
+              class="github-link">
+              <span class="github-link-content">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" fill="currentColor"
+                  style="margin-left: 4px; vertical-align: middle;">
+                  <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 
+           0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+           -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+           0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68.003
+           1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+           0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+           8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </span>
             </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-custom-font u-nav u-spacing-25 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="/" style="padding: 10px;">Home</a>
-</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="index.html#carousel_8890" data-page-id="181010214" style="padding: 10px;">Features</a>
-</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="https://github.com/aelassas/movinin" target="_blank" style="padding: 10px;">GitHub</a>
-</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="https://github.com/aelassas/movinin/wiki" target="_blank" style="padding: 10px;">Documentation</a>
-</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="index.html#sec-b091" data-page-id="181010214" style="padding: 10px;">Contact</a>
-</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="https://movinin.dynv6.net:3004/" target="_blank" style="padding: 10px;">Live Demo!</a>
-</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base" href="https://github.com/aelassas/movinin#support" target="_blank" style="padding: 10px;">Support</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-align-center u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html#carousel_8890" data-page-id="181010214">Features</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://github.com/aelassas/movinin" target="_blank">GitHub</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://github.com/aelassas/movinin/wiki" target="_blank">Documentation</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html#sec-b091" data-page-id="181010214">Contact</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://movinin.dynv6.net:3004/" target="_blank">Live Demo!</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://github.com/aelassas/movinin#support" target="_blank">Support</a>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          </div>
-        </nav>
-        <h3 class="u-headline u-text u-text-default u-text-1">
-          <a href="/">Movin' In</a>
-        </h3>
-      </div><style class="u-sticky-style" data-style-id="0699">.u-sticky-fixed.u-sticky-0699:before, .u-body.u-sticky-fixed .u-sticky-0699:before {
-border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom !important
-}</style></header>
-    <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_9c60" data-image-width="1920" data-image-height="1280">
-      <div class="u-align-left u-clearfix u-sheet u-sheet-1">
-        <div class="u-align-center u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <h1 class="u-align-center u-text u-text-body-alt-color u-text-1"> Rental Property Management Platform</h1>
-            <h3 class="u-custom-font u-text u-text-body-alt-color u-text-2"> Responsive, Secure, Native Mobile app for Android and iOS, Push Notifications, Stripe Payments and much more</h3>
-            <p class="u-custom-font u-text u-text-body-alt-color u-text-3">Built with&nbsp; <a href="https://react.dev/" class="u-active-none u-border-2 u-border-active-custom-color-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">React</a>, Powered by <a href="https://stripe.com/" class="u-active-none u-border-2 u-border-active-custom-color-1 u-border-custom-color-1 u-border-hover-custom-color-1 u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-white u-top-left-radius-0 u-top-right-radius-0 u-btn-2">Stripe</a>&nbsp;and <a href="https://www.paypal.com/" class="u-active-none u-border-2 u-border-custom-color-1 u-border-hover-custom-color-1 u-border-no-left u-border-no-right u-border-no-top u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-style u-hover-none u-none u-radius-0 u-text-body-alt-color u-top-left-radius-0 u-top-right-radius-0 u-btn-3" target="_blank">PayPal</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-custom-color-4 u-section-2" id="carousel_aae5">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-custom-font u-font-lato u-text u-text-1">How does it work</h2>
-        <p class="u-text u-text-2"> No more endless forms filling and redirecting. ​Movin' In frontend and mobile app are straightforward, easy to use and secure. Book your property quickly and stay informed about your booking with push notifications.<br>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2 data-i18n="hero.title">A Modern Rental Property Management Platform</h2>
+      <p data-i18n="hero.description">
+        Includes a web frontend, a native mobile app for Android and iOS, and a powerful admin panel.
+      </p>
+      <a href="https://movinin.dynv6.net:3004" class="btn btn-hero" data-i18n="hero.cta" target="_blank">Live Demo</a>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h3 data-i18n="about.title">Free, Cross-Platform, Open Source</h3>
+      <p data-i18n="about.description">
+        Movin' In is an open-source rental property management platform licensed under MIT. This means you're free to use, modify, share,
+        or even sell it. It works smoothly on web, Android, and iOS devices.
+      </p>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <h3 data-i18n="features.title">Features</h3>
+
+      <h4 data-i18n="features.supplier_title">Agency & Property Management</h4>
+      <ul>
+        <li data-i18n="features.supplier_management">Agency management</li>
+        <li data-i18n="features.single_or_multi_supplier">Ready for single or multiple agencies</li>
+        <li data-i18n="features.property_management">Property management</li>
+        <li data-i18n="features.flexible_availability">Flexible Time-Based Property Availability</li>
+        <li data-i18n="features.booking_management">Booking management</li>
+        <li data-i18n="features.vehicle_scheduler">Property scheduler</li>
+        <li data-i18n="features.auto_notifications">Auto-Notification System</li>
+      </ul>
+
+      <h4 data-i18n="features.pricing_title">Pricing & Payments</h4>
+      <ul>
+        <li data-i18n="features.payment_management">Payment management</li>
+        <li data-i18n="features.payment_gateways">Multiple payment gateways supported (Stripe, PayPal)</li>
+        <li data-i18n="features.payment_methods">Multiple payment methods: Credit Card, PayPal, Google Pay, Apple Pay,
+          Link, Pay at the counter, Pay in full, Pay deposit</li>
+      </ul>
+
+      <h4 data-i18n="features.locations_title">Locations & Mapping</h4>
+      <ul>
+        <li data-i18n="features.hierarchical_locations">Hierarchical locations with country and integration</li>
+        <li data-i18n="features.location_search">Location-based search with nested child location support</li>
+        <li data-i18n="features.map_display">Map display for locations</li>
+      </ul>
+
+      <h4 data-i18n="features.user_title">User Experience</h4>
+      <ul>
+        <li data-i18n="features.customer_management">Customer management</li>
+        <li data-i18n="features.login_options">Multiple login options: Google, Facebook, Apple, Email</li>
+        <li data-i18n="features.multilang">Multiple language support: English, French</li>
+        <li data-i18n="features.multicurrency">Multiple currencies support</li>
+        <li data-i18n="features.pagination_styles">Multiple pagination styles: classic (next/previous), infinite scroll
+        </li>
+        <li data-i18n="features.push_notifications">Push notifications</li>
+      </ul>
+
+      <h4 data-i18n="features.security_title">Security & Performance</h4>
+      <ul>
+        <li data-i18n="features.security">Secure against XSS, XST, CSRF, MITM, and DDoS attacks</li>
+        <li data-i18n="features.responsive">Responsive admin panel and frontend</li>
+        <li data-i18n="features.mobile_app">Native mobile app for Android and iOS (single codebase)</li>
+        <li data-i18n="features.docker">Docker support for easy deployment and a better developer experience</li>
+        <li data-i18n="features.sentry">Error monitoring and performance tracing with Sentry</li>
+      </ul>
+
+      <h4 data-i18n="features.platforms_title">Supported Platforms</h4>
+      <ul>
+        <li data-i18n="features.ios">iOS</li>
+        <li data-i18n="features.android">Android</li>
+        <li data-i18n="features.web">Web</li>
+        <li data-i18n="features.docker">Docker</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section id="demo">
+    <div class="container">
+      <h3 data-i18n="demo.title">Try the App</h3>
+
+      <div class="demo-group">
+        <h4 data-i18n="demo.frontend">Frontend</h4>
+        <p><strong data-i18n="demo.url">URL:</strong>
+          <a href="https://movinin.dynv6.net:3004/" target="_blank"
+            rel="noopener noreferrer">https://movinin.dynv6.net:3004/</a>
         </p>
-        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
-                <div class="u-container-layout u-valign-top u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/2.png" alt=""></span>
-                  <p class="u-align-center u-text u-text-3">Find your property.</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
-                <div class="u-container-layout u-valign-top u-container-layout-2"><span class="u-icon u-icon-circle u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7126"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-7126" style="enable-background:new 0 0 512 512;"><g><g><path d="M290.133,0H119.467C95.94,0,76.8,19.14,76.8,42.667v307.2c0,23.526,19.14,42.667,42.667,42.667h153.6v-17.067h-153.6    c-14.114,0-25.6-11.486-25.6-25.6v-307.2c0-14.114,11.486-25.6,25.6-25.6h170.667c14.114,0,25.6,11.486,25.6,25.6v247.467H332.8    V42.667C332.8,19.14,313.66,0,290.133,0z"></path>
-</g>
-</g><g><g><path d="M414.643,227.294l-83.712-104.619l-13.338,10.667l83.712,104.61c10.863,13.568,16.836,30.618,16.828,48v208.981H293.291    c-44.083,0-79.957-35.866-79.957-79.957V384h-17.067v30.976c0,53.495,43.529,97.024,97.024,97.024h133.376    c4.719,0,8.533-3.814,8.533-8.533V285.961C435.209,264.73,427.913,243.891,414.643,227.294z"></path>
-</g>
-</g><g><g><path d="M221.833,201.242c5.99,0.171,11.563,2.662,15.667,7.014l114.68,121.856l12.433-11.699L249.916,196.548    c-7.245-7.672-17.05-12.066-27.597-12.365c-10.658-0.358-20.582,3.524-28.16,10.684c-0.094,0.094-0.777,0.742-0.862,0.836    c-14.583,14.626-15.565,37.581-2.261,53.436l73.498,86.784v26.402c-0.009,47.155,29.645,89.933,73.805,106.47l5.99-15.983    c-37.53-14.054-62.737-50.415-62.729-90.487V332.8c0-2.014-0.717-3.977-2.022-5.521l-75.494-89.148    c-7.552-8.994-6.997-22.059,1.707-30.771C210.142,203.247,215.825,201.207,221.833,201.242z"></path>
-</g>
-</g><g><g><rect x="264.533" y="17.067" width="17.067" height="213.333"></rect>
-</g>
-</g><g><g><rect x="221.867" y="281.6" width="17.067" height="102.4"></rect>
-</g>
-</g><g><g><rect x="221.867" y="8.533" width="17.067" height="187.733"></rect>
-</g>
-</g><g><g><rect x="119.467" y="42.667" width="17.067" height="110.933"></rect>
-</g>
-</g><g><g><rect x="162.133" y="42.667" width="17.067" height="68.267"></rect>
-</g>
-</g><g><g><path d="M179.2,281.6H128c-4.71,0-8.533,3.814-8.533,8.533v51.2c0,4.719,3.823,8.533,8.533,8.533h51.2    c4.71,0,8.533-3.814,8.533-8.533v-51.2C187.733,285.414,183.91,281.6,179.2,281.6z M170.667,332.8h-34.133v-34.133h34.133V332.8z"></path>
-</g>
-</g></svg></span>
-                  <p class="u-align-center u-text u-text-4">Select your preferred payment method.</p>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
-                <div class="u-container-layout u-valign-top u-container-layout-3"><span class="u-file-icon u-icon u-text-white u-icon-3"><img src="images/3.png" alt=""></span>
-                  <p class="u-align-center u-text u-text-5">Checkout.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p><strong data-i18n="demo.login">Login:</strong> jdoe@movinin.io</p>
+        <p><strong data-i18n="demo.password">Password:</strong> M00vinin</p>
       </div>
-    </section>
-    <section class="u-align-center u-clearfix u-custom-color-4 u-section-3" id="carousel_7de1">
-      <img src="images/233ae9cebd49bdae00511eb0d67354b21c300c2411dc1fdac8fa0795e560c4771012655e1ad805e59f4135d47aa7d8594227d57c4fddacd9361f03_1280.jpg" class="u-align-left u-expanded-width u-image u-left-0 u-image-1" data-image-width="1280" data-image-height="719">
-      <div class="u-clearfix u-gutter-0 u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div class="u-container-style u-custom-color-5 u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
-              <div class="u-container-layout u-container-layout-1">
-                <h3 class="u-align-center u-custom-font u-text u-text-body-alt-color u-text-1"> Property Management</h3>
-                <p class="u-align-center u-text u-text-body-alt-color u-text-2">Manage your properties from the backend with ease.</p>
-              </div>
-            </div>
-            <div class="u-container-style u-layout-cell u-size-20 u-white u-layout-cell-2">
-              <div class="u-container-layout u-container-layout-2">
-                <h3 class="u-align-center u-custom-font u-text u-text-3"> Booking Management</h3>
-                <p class="u-align-center u-text u-text-4"> Manage your bookings from the backend safely and efficiently.</p>
-              </div>
-            </div>
-            <div class="u-align-left u-black u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-3">
-              <div class="u-container-layout u-container-layout-3">
-                <h3 class="u-align-center u-custom-font u-text u-text-body-alt-color u-text-5"> Payment Management</h3>
-                <p class="u-align-center u-text u-text-body-alt-color u-text-6">Manage your payments and customers from stripe dashboard with ease.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
+      <div class="demo-group">
+        <h4 data-i18n="demo.adminPanel">Admin Panel</h4>
+        <p><strong data-i18n="demo.url">URL:</strong>
+          <a href="https://movinin.dynv6.net:3003/" target="_blank"
+            rel="noopener noreferrer">https://movinin.dynv6.net:3003/</a>
+        </p>
+        <p><strong data-i18n="demo.login">Login:</strong> admin@movinin.io</p>
+        <p><strong data-i18n="demo.password">Password:</strong> M00vinin</p>
       </div>
-    </section>
-    <section class="u-align-center u-clearfix u-custom-color-5 u-valign-middle u-section-4" id="carousel_8890">
-      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div class="u-container-style u-custom-color-5 u-layout-cell u-right-cell u-size-30 u-layout-cell-1">
-              <div class="u-container-layout u-container-layout-1">
-                <h4 class="infinite u-align-center u-custom-font u-font-lato u-text u-text-body-alt-color u-text-1">Features</h4>
-                <ul class="u-align-left u-custom-font u-text u-text-body-alt-color u-text-2">
-                  <li> Agency management</li>
-                  <li>Ready for one or multiple agencies<br>
-                  </li>
-                  <li>Property management</li>
-                  <li>Payment management<br>
-                  </li>
-                  <li>Customer management</li>
-                  <li> Multiple payment methods (Credit Card, PayPal, Google Pay, Apple Pay, Link, Pay Later)</li>
-                  <li> Multiple language support (English, French)</li>
-                  <li>
-                    <a href="https://github.com/aelassas/movinin/wiki/Add-New-Currency" class="u-active-none u-border-2 u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-body-alt-color u-top-left-radius-0 u-top-right-radius-0 u-btn-1">Multiple currencies support</a>
-                    <br>
-                  </li>
-                  <li>Multiple pagination options<br>
-                  </li>
-                  <li>Operational Stripe Payment Gateway<br>
-                  </li>
-                  <li>Responsive backend and frontend<br>
-                  </li>
-                  <li> Native Mobile app for Android and iOS</li>
-                  <li>Push notifications<br>
-                  </li>
-                  <li>Secure against XSS, XST, CSRF and MITM<br>
-                  </li>
-                  <li>Supported Platforms: iOS, Android, Web, Docker<br>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-2">
-              <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-2">
-                <img class="u-image u-image-1" src="images/e8823c695e8508609fc808256b97bb4bd28c32393d97861426a3bd37f272fb3d513926023f963cc0a3508481375fb00d41fe4cc638254140801594_1280.jpg" data-image-width="1280" data-image-height="720">
-              </div>
-            </div>
-          </div>
-        </div>
+
+      <div id="demo-mobile-app" class="demo-group">
+        <h4 data-i18n="demo.androidApp">Android App</h4>
+        <p data-i18n="demo.androidAppDesc">You can install the Android App by downloading the APK and installing it on
+          any Android device.</p>
+        <p>
+          <a id="download-mobile-app" href="https://github.com/aelassas/movinin/releases/latest/download/movinin.apk"
+            rel="noopener noreferrer" class="btn" data-i18n="demo.downloadApk">Download Latest APK</a>
+        </p>
+        <p><strong data-i18n="demo.login">Login:</strong> jdoe@movinin.io</p>
+        <p><strong data-i18n="demo.password">Password:</strong> M00vinin</p>
       </div>
-    </section>
-    <section class="u-clearfix u-custom-color-5 u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-section-5" id="carousel_ef51">
-      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div class="u-container-style u-image u-image-contain u-layout-cell u-left-cell u-size-40 u-image-1" data-image-width="1280" data-image-height="853">
-              <div class="u-container-layout u-container-layout-1"></div>
-            </div>
-            <div class="u-align-right u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-2">
-              <div class="u-container-layout u-valign-middle u-container-layout-2">
-                <h2 class="u-custom-font u-text u-text-white u-text-1" data-animation-out="1"> Safe. Secure. Straightforward. Subtly crafted.</h2>
-              </div>
-            </div>
-          </div>
-        </div>
+
+      <p>
+        <span data-i18n="demo.moreInfo">For more info, visit the</span>
+        <a href="https://github.com/aelassas/movinin#live-demo" target="_blank" rel="noopener noreferrer"
+          data-i18n="demo.githubLiveDemo">GitHub Live Demo section</a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="container">
+      <h3 data-i18n="support.title">Support</h3>
+      <p data-i18n="support.description1">
+        If this project helped you, saved you time, or inspired you in any way, please consider supporting its future
+        growth and maintenance.
+      </p>
+
+      <p data-i18n="support.description2">
+        You can show your support by starring the repository (it helps increase visibility and shows your appreciation),
+        sharing the project (recommend it to colleagues, communities, or on social media), or making a donation via:
+      </p>
+
+      <ul>
+        <li>
+          <a href="https://github.com/sponsors/aelassas" target="_blank" rel="noopener noreferrer"
+            data-i18n="support.donation1">GitHub Sponsors</a>
+        </li>
+        <li>
+          <a href="https://www.paypal.me/aelassaspp" target="_blank" rel="noopener noreferrer"
+            data-i18n="support.donation2">PayPal</a>
+        </li>
+        <li>
+          <a href="https://www.buymeacoffee.com/aelassas" target="_blank" rel="noopener noreferrer"
+            data-i18n="support.donation3">Buy Me a Coffee</a>
+        </li>
+      </ul>
+
+      <p data-i18n="support.closing">
+        Open-source software requires time, effort, and resources to maintain—your support helps keep this project
+        alive, up-to-date, and accessible to everyone.
+        Every contribution, big or small, makes a difference and motivates continued work on features, bug fixes, and
+        new ideas.
+      </p>
+
+      <div id="github-issues-support">
+        <h4 data-i18n="githubIssues.title">Report Bugs & Request Features</h4>
+        <p data-i18n="githubIssues.description">
+          Found a bug or want a new feature? Please help improve the project by
+          <a href="https://github.com/aelassas/movinin/issues" target="_blank" rel="noopener noreferrer"
+            data-i18n="githubIssues.linkText">opening an issue on GitHub</a>.
+        </p>
       </div>
-    </section>
-    <section class="u-clearfix u-gradient u-section-6" id="sec-f83a">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-align-left-sm u-align-left-xs u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1">
-                  <h3 class="u-custom-font u-text u-text-body-alt-color u-text-1">Frontend</h3>
-                  <img src="images/frontend-2-1.png" alt="" class="u-image u-image-contain u-image-round u-radius-10 u-image-1" data-image-width="1600" data-image-height="769" data-animation-name="customAnimationIn" data-animation-duration="1000">
-                  <h6 class="u-text u-text-body-alt-color u-text-2">For booking properties</h6>
-                  <ul class="u-custom-font u-text u-text-body-alt-color u-text-3">
-                    <li>Search for available properties</li>
-                    <li>Choose a property</li>
-                    <li>Set your booking options</li>
-                    <li>Book your property</li>
-                    <li>Multiple payment methods<br>
-                    </li>
-                    <li>Multiple language support<br>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
-                <div class="u-container-layout u-valign-top u-container-layout-2">
-                  <h3 class="u-custom-font u-text u-text-body-alt-color u-text-4">Mobile App</h3>
-                  <img class="u-image u-image-contain u-image-round u-radius-10 u-image-2" src="images/mobile-8.jpg" data-image-width="1080" data-image-height="2400" data-animation-name="customAnimationIn" data-animation-duration="1000">
-                  <h6 class="u-text u-text-body-alt-color u-text-5">For Android and iOS</h6>
-                  <ul class="u-text u-text-body-alt-color u-text-6">
-                    <li>Native Mobile app for Android and iOS with single codebase</li>
-                    <li>Straightforward and easy to use<br>
-                    </li>
-                    <li>Push notifications</li>
-                    <li>Safe and secure</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
-                <div class="u-container-layout u-container-layout-3">
-                  <h3 class="u-custom-font u-text u-text-body-alt-color u-text-7">Backend</h3>
-                  <img src="images/backend-8.png" alt="" class="u-expanded-width u-image u-image-contain u-image-round u-radius-10 u-image-3" data-image-width="1920" data-image-height="923" data-animation-name="customAnimationIn" data-animation-duration="1000">
-                  <h6 class="u-text u-text-body-alt-color u-text-8">For managing bookings</h6>
-                  <ul class="u-text u-text-body-alt-color u-text-9">
-                    <li>Manage agencies</li>
-                    <li>Manage properties</li>
-                    <li>Manage bookings</li>
-                    <li>Manage customers</li>
-                    <li>Manage payments</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-section-7" id="sec-5793">
-      <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
-        <div class="u-layout">
-          <div class="u-layout-row">
-            <div class="u-container-style u-custom-color-4 u-layout-cell u-left-cell u-size-24 u-layout-cell-1">
-              <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="images/9.png" alt=""></span>
-                <h2 class="u-align-center u-custom-font u-text u-text-1">Agency-Oriented<br>
-                </h2>
-                <p class="u-align-center u-text u-text-2"> Movin' In is designed to work with multiple agencies. Agencies can manage their properties, customers and bookings from the backend. Movin' In can also work with only one agency as well.</p>
-              </div>
-            </div>
-            <div class="u-container-style u-image u-layout-cell u-right-cell u-size-36 u-image-1" data-image-width="1280" data-image-height="853">
-              <div class="u-container-layout u-container-layout-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-white u-section-8" id="sec-b091">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-align-center-sm u-align-center-xs u-border-10 u-border-palette-1-base u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-group-1">
-          <div class="u-container-layout u-valign-top u-container-layout-1">
-            <h3 class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-default u-text-1"> How can we help?</h3>
-            <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-default u-text-2"> Fill out our contact form and we will get back to you ASAP.</p>
-            <div class="u-form u-form-1">
-              <form action="https://formspree.io/f/mgvwkgzn" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form" redirect="true">
-                <div class="u-form-group u-form-name">
-                  <label for="name-a97b" class="u-custom-font u-form-control-hidden u-label u-label-1">Name</label>
-                  <input type="text" placeholder="Enter your name" id="name-a97b" name="name" class="u-border-1 u-border-grey-30 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-white u-input-1" required="">
-                </div>
-                <div class="u-form-email u-form-group">
-                  <label for="email-a97b" class="u-custom-font u-form-control-hidden u-label u-label-2">Email</label>
-                  <input type="email" placeholder="Enter your email address" id="email-a97b" name="email" class="u-border-1 u-border-grey-30 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-white u-input-2" required="">
-                </div>
-                <div class="u-form-group u-form-message">
-                  <label for="message-a97b" class="u-custom-font u-form-control-hidden u-label u-label-3">Message</label>
-                  <textarea placeholder="Enter your message" rows="4" cols="50" id="message-a97b" name="message" class="u-border-1 u-border-grey-30 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-white u-input-3" required=""></textarea>
-                </div>
-                <div class="u-align-center u-form-group u-form-submit">
-                  <a href="#" class="u-btn u-btn-submit u-button-style u-custom-font u-btn-1">Submit</a>
-                  <input type="submit" value="submit" class="u-form-control-hidden">
-                </div>
-                <div class="u-form-send-message u-form-send-success"></div>
-                <div class="u-form-send-error u-form-send-message"></div>
-                <input type="hidden" value="" name="recaptchaResponse">
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    <footer class="u-align-center u-clearfix u-custom-color-5 u-footer u-footer" id="sec-77b4"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1"> Copyright © 2024 Movin' In.&nbsp;All rights reserved.</p>
-      </div></footer>
-  </body>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h3 data-i18n="contact.title">Contact Us</h3>
+      <form action="https://formspree.io/f/mgvwkgzn" method="POST">
+        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.namePlaceholder" autocomplete
+          required />
+        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.emailPlaceholder"
+          autocomplete required />
+        <textarea name="message" placeholder="Message" data-i18n-placeholder="contact.messagePlaceholder"
+          required></textarea>
+        <button type="submit" data-i18n="contact.submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; <span id="year"></span> Movin' In. <span data-i18n="footer.copyright">All rights
+          reserved.</span></p>
+    </div>
+  </footer>
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
 </html>
