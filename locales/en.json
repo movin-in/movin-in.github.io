@@ -43,6 +43,7 @@
   "features.ios": "iOS",
   "features.android": "Android",
   "features.web": "Web",
+  "features.platform_docker": "Docker",
   "demo.title": "Try the App",
   "demo.frontend": "Frontend",
   "demo.url": "URL:",
