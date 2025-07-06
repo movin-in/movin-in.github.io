@@ -11,6 +11,7 @@
   --lang-text-bg: #fff;
   --lang-text: #212529;
   --lang-text-hover: #eee;
+  --lang-text-selected: #fff;
   --lang-border: #ddd;
   --btn-bg: #fff;
   --btn-text: #212529;
@@ -37,6 +38,7 @@
   --lang-text-bg: #23272F;
   --lang-text: #F6F7F9;
   --lang-text-hover: #3A404A;
+  --lang-text-selected: #fff;
   --lang-border: #33372F;
   --btn-bg: #121212;
   --btn-text: #F6F7F9;
@@ -208,7 +210,6 @@ nav a:focus {
   top: 100%;
   right: 0;
   margin-top: 0.5rem;
-  background: #fff;
   border: 1px solid var(--lang-border);
   border-radius: 4px;
   z-index: 1000;
@@ -246,7 +247,7 @@ nav a:focus {
 [data-lang][data-selected="true"],
 [data-lang][data-selected="true"]:hover {
   background-color: var(--secondary);
-  color: #fff;
+  color: var(--lang-text-selected);
   font-weight: bold;
   border-color: var(--primary-dark);
 }
@@ -483,7 +484,6 @@ section h3 {
   border-radius: var(--border-radius);
   font-size: 0.95rem;
   line-height: 1.4;
-  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04); */
 }
 
 /* Demo Section */
@@ -506,9 +506,7 @@ section h3 {
   background: var(--background-dark);
   border-radius: var(--border-radius);
   padding: 1.5rem 2rem;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
   border: 1px solid var(--border);
-  /* Fixed width so boxes stay side by side */
   flex: 1 1 200px;
   min-width: 260px;
   display: flex;
