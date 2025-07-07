@@ -208,7 +208,7 @@ nav a:focus {
 .lang-menu {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -50%;
   margin-top: 0.5rem;
   border: 1px solid var(--lang-border);
   border-radius: 4px;
@@ -615,7 +615,7 @@ section h3 {
   color: var(--primary-dark);
 }
 
-/* Contact Form */
+/* Contact Section */
 #contact {
   background-color: var(--background);
 }
