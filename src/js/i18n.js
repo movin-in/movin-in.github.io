@@ -84,6 +84,24 @@ export async function setLang(lang) {
   }
 }
 
+export async function loadInitialLanguage() {
+  document.documentElement.setAttribute('data-loading', '')
+
+  const params = new URLSearchParams(window.location.search)
+  const urlLang = params.get('lang')
+  const storedLang = localStorage.getItem('lang')
+
+  const lang = supportedLangs.includes(urlLang)
+    ? urlLang
+    : supportedLangs.includes(storedLang)
+      ? storedLang
+      : 'en'
+
+  await setLang(lang)
+
+  document.documentElement.removeAttribute('data-loading')
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search)
   const urlLang = params.get('lang')
