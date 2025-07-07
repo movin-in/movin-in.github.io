@@ -13,8 +13,8 @@
   --lang-text-hover: #eee;
   --lang-text-selected: #fff;
   --lang-border: #ddd;
+  --lang-secondary: #1a73e8;
   --btn-bg: #fff;
-  --btn-text: #212529;
   --btn-bg: #212529;
   --btn-text: #fff;
   --form-bg: #fafafa;
@@ -40,6 +40,7 @@
   --lang-text-hover: #3A404A;
   --lang-text-selected: #fff;
   --lang-border: #33372F;
+  --lang-secondary: #1a73e8;
   --btn-bg: #121212;
   --btn-text: #F6F7F9;
   --form-bg: #1B1D24;
@@ -256,7 +257,7 @@ nav a:focus {
 
 [data-lang][data-selected="true"],
 [data-lang][data-selected="true"]:hover {
-  background-color: var(--secondary);
+  background-color: var(--lang-secondary);
   color: var(--lang-text-selected);
   font-weight: bold;
   border-color: var(--primary-dark);
