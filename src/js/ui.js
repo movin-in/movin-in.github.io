@@ -133,6 +133,38 @@ export async function updateDownloadLink() {
 }
 
 /**
+ * Dynamically loads the GitHub buttons script.
+ * Returns a Promise that resolves when the script is loaded.
+ * Uses https://buttons.github.io/buttons.js as the source.
+ */
+export function loadGitHubButtonsScript() {
+  return new Promise((resolve, reject) => {
+    if (window.GitHubButton) {
+      // Script already loaded
+      resolve()
+      return
+    }
+
+    const script = document.createElement('script')
+    script.src = 'https://buttons.github.io/buttons.js'
+    script.async = true
+    script.onload = () => resolve()
+    script.onerror = () => reject(new Error('Failed to load GitHub buttons script'))
+    document.head.appendChild(script)
+  })
+}
+
+/**
+ * Initializes GitHub button visibility or any setup needed after buttons.js is loaded.
+ */
+export function initGitHubButton() {
+  const githubBtn = document.getElementById('github-btn')
+  if (githubBtn) {
+    githubBtn.style.visibility = 'visible'
+  }
+}
+
+/**
  * Updates the footer year element with the current year.
  */
 export function updateFooterYear() {
