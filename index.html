@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="open-source, property rental">
-  <meta name="description" content="Open Source Rental Property Management Platform">
-  <meta property="og:title" content="Movin' In - Open Source Rental Property Management Platform">
-  <meta property="og:description"
-    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties.">
-  <meta property="og:url" content="https://movin-in.github.io">
+  <meta name="keywords" content="open-source, property rental" />
+  <meta name="description" content="Open Source Rental Property Management Platform" />
   <title>Movin' In - Open Source Rental Property Management Platform</title>
+
+  <!-- SEO -->
+  <meta name="robots" content="index, follow" />
   <link rel="alternate" hreflang="en" href="https://movin-in.github.io/?lang=en" />
   <link rel="alternate" hreflang="fr" href="https://movin-in.github.io/?lang=fr" />
   <link rel="alternate" hreflang="es" href="https://movin-in.github.io/?lang=es" />
@@ -19,13 +19,28 @@
   <link rel="alternate" hreflang="zh" href="https://movin-in.github.io/?lang=zh" />
   <link rel="alternate" hreflang="x-default" href="https://movin-in.github.io/" />
   <link rel="canonical" href="https://movin-in.github.io/" />
-  <link rel="icon" href="/favicon.png">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Movin' In - Open Source Rental Property Management Platform" />
+  <meta property="og:description"
+    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties." />
+  <meta property="og:url" content="https://movin-in.github.io" />
+  <meta property="og:image" content="https://movin-in.github.io/content/cover-1.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Movin' In - Open Source Rental Property Management Platform" />
+  <meta name="twitter:description"
+    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties." />
+  <meta name="twitter:image" content="https://movin-in.github.io/content/cover-1.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.png" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="/src/css/style.css" />
-  <style>
-    html[data-loading] body {
-      visibility: hidden;
-    }
-  </style>
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZHVBZFNXT"></script>
   <script>
     window.dataLayer = window.dataLayer || []
@@ -42,7 +57,9 @@
         <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="icon"></span>
         </button>
-        <h1 data-i18n="title">Movin' In</h1>
+        <a href="/" class="site-title">
+          <h1 data-i18n="title">Movin' In</h1>
+        </a>
       </div>
 
       <nav aria-label="Primary navigation">

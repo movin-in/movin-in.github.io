@@ -77,6 +77,11 @@ a:hover {
   padding: 0.5rem 0;
 }
 
+/* Inline Loading Fallback */
+html[data-loading] body {
+  visibility: hidden;
+}
+
 /* Header */
 .header-container {
   display: flex;
@@ -97,6 +102,11 @@ header {
 
 header.scrolled {
   border-bottom: 1px solid var(--header-border);
+}
+
+a.site-title {
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
