@@ -253,15 +253,13 @@ nav a:focus {
 }
 
 .theme-toggle-btn {
+  background-color: var(--background);
   border: none;
+  margin-right: 10px;
 }
 
 .theme-toggle-btn:hover {
   cursor: pointer;
-}
-
-.theme-toggle-btn {
-  background-color: var(--background);
 }
 
 .theme-toggle-btn svg {
