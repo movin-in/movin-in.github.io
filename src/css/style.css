@@ -572,10 +572,6 @@ section h3 {
   margin-right: auto;
 }
 
-#support #github-btn {
-  visibility: hidden;
-}
-
 #support ul {
   list-style-type: disc;
   max-width: 700px;
