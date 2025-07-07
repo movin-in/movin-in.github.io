@@ -23,11 +23,17 @@ export const supportedLangs = ['en', 'fr', 'de', 'es', 'pt', 'zh', 'ja']
 export function applyTranslations(translations) {
   window.translations = translations
 
-  // Apply translations for text content
+  // Apply translations for text content (supports HTML)
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n')
-    if (translations[key]) {
-      el.textContent = translations[key]
+    const translation = translations[key]
+    if (!translation) return
+
+    const hasHTML = /<\/?[a-z][\s\S]*>/i.test(translation) || /&[a-z]+;/.test(translation)
+    if (hasHTML) {
+      el.innerHTML = translation
+    } else {
+      el.textContent = translation
     }
   })
 
@@ -39,28 +45,6 @@ export function applyTranslations(translations) {
       el.setAttribute('placeholder', translation)
     }
   })
-
-  // Load translations again to support HTML inside translations (like <a>, <strong>)
-  const defaultLang = 'en'
-  const lang = localStorage.getItem('lang') || defaultLang
-
-  fetch(`${base}locales/${lang}.json`)
-    .then(res => res.json())
-    .then(translations => {
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n')
-        const translation = translations[key]
-        if (!translation) return
-
-        const hasHTML = /<\/?[a-z][\s\S]*>/i.test(translation)
-        if (hasHTML) {
-          el.innerHTML = translation
-        } else {
-          el.textContent = translation
-        }
-      })
-    })
-    .catch(err => console.error(`Failed to load ${lang} translations`, err))
 }
 
 /**

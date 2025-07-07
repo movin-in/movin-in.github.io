@@ -283,10 +283,6 @@ nav a:focus {
   stroke: var(--secondary);
 }
 
-.btn-hero {
-  min-width: 200px;
-}
-
 @media (max-width: 900px) {
   header {
     position: static;
@@ -408,6 +404,11 @@ nav a:focus {
   margin-bottom: 2rem;
 }
 
+.hero-title {
+  word-break: break-word;
+  hyphens: auto;
+}
+
 .hero .btn {
   display: inline-block;
   background: var(--btn-bg);
@@ -417,6 +418,7 @@ nav a:focus {
   text-decoration: none;
   font-size: 1rem;
   transition: background 0.3s ease;
+  min-width: 200px;
 }
 
 .hero .btn:hover {
