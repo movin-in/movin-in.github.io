@@ -10,7 +10,7 @@ const base = import.meta.env.BASE_URL || '/'
  * List of supported language codes.
  * @type {string[]}
  */
-export const supportedLangs = ['en', 'fr', 'es', 'pt', 'zh', 'ja']
+export const supportedLangs = ['en', 'fr', 'de', 'es', 'pt', 'zh', 'ja']
 
 /**
  * Applies the given translations to all elements with
