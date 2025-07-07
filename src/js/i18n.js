@@ -4,8 +4,6 @@
  */
 window.currentLang = 'en'
 
-const base = import.meta.env.BASE_URL || '/'
-
 /**
  * List of supported language codes.
  * @type {string[]}
