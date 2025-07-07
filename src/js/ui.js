@@ -39,7 +39,7 @@ export function initHeaderScroll() {
  * Toggles the language menu visibility, sets the selected language,
  * and closes the menu when clicking outside.
  * 
- * @param {function(string): void} setLang - Function to change the app language.
+ * @param {function(string): Promise<void>} setLang - Async function to change the app language.
  */
 export function initLanguageMenu(setLang) {
   const langToggle = document.getElementById('lang-toggle')
@@ -54,9 +54,11 @@ export function initLanguageMenu(setLang) {
   })
 
   langMenu.querySelectorAll('button').forEach(item => {
-    item.addEventListener('click', () => {
+    item.addEventListener('click', async () => {
       const lang = item.getAttribute('data-lang')
-      if (lang) setLang(lang)
+      if (lang) {
+        await setLang(lang)
+      }
       langToggle.setAttribute('aria-expanded', 'false')
       langMenu.hidden = true
     })
