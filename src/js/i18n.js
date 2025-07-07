@@ -5,6 +5,8 @@ const base = import.meta.env.BASE_URL || '/'
 export const supportedLangs = ['en', 'fr', 'es', 'pt', 'zh', 'ja']
 
 export function applyTranslations(translations) {
+  window.translations = translations
+
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n')
     if (translations[key]) {
@@ -48,6 +50,15 @@ export function applyTranslations(translations) {
     .catch(err => console.error(`Failed to load ${lang} translations`, err))
 }
 
+function highlightSelectedLang(lang) {
+  document.querySelectorAll('[data-lang]').forEach(btn => {
+    btn.removeAttribute('data-selected')
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.setAttribute('data-selected', 'true')
+    }
+  })
+}
+
 export async function setLang(lang) {
   try {
     localStorage.setItem('lang', lang)
@@ -67,13 +78,7 @@ export async function setLang(lang) {
     window.history.replaceState({}, '', url)
 
     // Highlight selected language button
-    const buttons = document.querySelectorAll('[data-lang]')
-    buttons.forEach(btn => {
-      btn.removeAttribute('data-selected')
-      if (btn.getAttribute('data-lang') === lang) {
-        btn.setAttribute('data-selected', 'true')
-      }
-    })
+    highlightSelectedLang(lang)
   } catch (err) {
     console.error(`Failed to load ${lang} translations:`, err)
   }

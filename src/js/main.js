@@ -1,139 +1,38 @@
-import { supportedLangs, setLang, applyTranslations } from './i18n.js'
-
-window.setLang = setLang
+import { supportedLangs, setLang } from './i18n.js'
+import {
+  initHamburgerMenu,
+  initHeaderScroll,
+  initLanguageMenu,
+  initThemeToggle,
+  updateDownloadLink,
+  updateFooterYear
+} from './ui.js'
 
 document.documentElement.setAttribute('data-loading', '')
 
-  // Detect language, load translation file asynchronously, update page language and title, then apply translations
-  ; (async function () {
-    const params = new URLSearchParams(window.location.search)
-    const urlLang = params.get('lang')
-    const storedLang = localStorage.getItem('lang')
+async function loadInitialLanguage() {
+  const params = new URLSearchParams(window.location.search)
+  const urlLang = params.get('lang')
+  const storedLang = localStorage.getItem('lang')
 
-    const lang = supportedLangs.includes(urlLang)
-      ? urlLang
-      : supportedLangs.includes(storedLang)
-        ? storedLang
-        : 'en'
+  const lang = supportedLangs.includes(urlLang)
+    ? urlLang
+    : supportedLangs.includes(storedLang)
+      ? storedLang
+      : 'en'
 
-    try {
-      const res = await fetch(`locales/${lang}.json`)
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+  await setLang(lang)
 
-      const translations = await res.json()
-      document.documentElement.lang = lang
-      document.title = translations['website.title'] || document.title
-      window.translations = translations
-      window.currentLang = lang
-      localStorage.setItem('lang', lang)
+  document.documentElement.removeAttribute('data-loading')
+}
 
-      applyTranslations(translations)
-    } catch (err) {
-      console.error(`Failed to load translations for ${lang}:`, err)
-    } finally {
-      document.documentElement.removeAttribute('data-loading')
-    }
-  })()
+window.addEventListener('DOMContentLoaded', async () => {
+  await loadInitialLanguage()
 
-// DOMContentLoaded
-window.addEventListener('DOMContentLoaded', () => {
-  // Hamburger menu
-  const hamburger = document.querySelector('.hamburger')
-  const nav = document.querySelector('nav')
-
-  hamburger.addEventListener('click', () => {
-    const expanded = hamburger.getAttribute('aria-expanded') === 'true'
-    hamburger.setAttribute('aria-expanded', !expanded)
-    hamburger.classList.toggle('active')
-    nav.classList.toggle('active')
-  })
-
-  // Set header bottom border on scroll
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('header')
-    if (window.scrollY > 10) {
-      header.classList.add('scrolled')
-    } else {
-      header.classList.remove('scrolled')
-    }
-  })
-
-  // Handle language
-  const langToggle = document.getElementById('lang-toggle')
-  const langMenu = document.getElementById('lang-menu')
-
-  langToggle.addEventListener('click', () => {
-    const expanded = langToggle.getAttribute('aria-expanded') === 'true'
-    langToggle.setAttribute('aria-expanded', !expanded)
-    langMenu.hidden = expanded
-  })
-
-  // Hide menu and change language on language item click
-  langMenu.querySelectorAll('button').forEach(item => {
-    item.addEventListener('click', () => {
-      const lang = item.getAttribute('data-lang')
-      setLang(lang)
-
-      langToggle.setAttribute('aria-expanded', false)
-      langMenu.hidden = true
-    })
-  })
-
-  // Close language menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
-      langToggle.setAttribute('aria-expanded', 'false')
-      langMenu.hidden = true
-    }
-  })
-
-  // Light/Dark theme
-  const themeToggleBtn = document.getElementById('theme-toggle')
-  const iconSun = themeToggleBtn.querySelector('.icon-sun')
-  const iconMoon = themeToggleBtn.querySelector('.icon-moon')
-
-  function updateToggleIcon(theme) {
-    if (theme === 'dark') {
-      iconSun.style.display = 'block'
-      iconMoon.style.display = 'none'
-      themeToggleBtn.setAttribute('aria-pressed', 'true')
-    } else {
-      iconSun.style.display = 'none'
-      iconMoon.style.display = 'block'
-      themeToggleBtn.setAttribute('aria-pressed', 'false')
-    }
-  }
-
-  // Load saved theme or default to light
-  const savedTheme = localStorage.getItem('theme') || 'light'
-  document.documentElement.setAttribute('data-theme', savedTheme)
-  updateToggleIcon(savedTheme)
-
-  themeToggleBtn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme')
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
-    document.documentElement.setAttribute('data-theme', newTheme)
-    localStorage.setItem('theme', newTheme)
-    updateToggleIcon(newTheme)
-  })
-
-  // Get latest mobile android app link
-  async function updateDownloadLink() {
-    try {
-      const url = 'https://raw.githubusercontent.com/aelassas/movinin/main/.github/latest-release.json'
-      const cacheBustedUrl = `${url}?t=${Date.now()}`
-      const res = await fetch(cacheBustedUrl)
-      if (!res.ok) throw new Error('Failed to fetch latest release info')
-      const data = await res.json()
-      const link = document.getElementById('download-mobile-app')
-      link.href = data.latestApkUrl
-    } catch (err) {
-      console.error(err)
-      document.getElementById('demo-mobile-app').style.display = 'none'
-    }
-  }
-
+  initHamburgerMenu()
+  initHeaderScroll()
+  initLanguageMenu(setLang)
+  initThemeToggle()
   updateDownloadLink()
-
-  document.getElementById('year').textContent = new Date().getFullYear()
+  updateFooterYear()
 })
