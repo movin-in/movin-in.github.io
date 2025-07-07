@@ -12,7 +12,7 @@ This website presents the main features, demo, support, and contact sections to 
 
 ## Features
 
-- Multilingual support (English, French, Spanish)  
+- Multilingual support Multilingual support (English, French, Spanish, Portuguese, Japanese, Chinese)
 - Responsive and accessible design  
 - Language switcher and dark mode toggle  
 - Demo links and contact form integration  

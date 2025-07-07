@@ -6,14 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="keywords" content="open-source, property rental">
   <meta name="description" content="Open Source Rental Property Management Platform">
-  <title>Movin' In - Open Source Rental Property Management Platform</title>
   <meta property="og:title" content="Movin' In - Open Source Rental Property Management Platform">
   <meta property="og:description"
     content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties.">
   <meta property="og:url" content="https://movin-in.github.io">
-  <link rel="canonical" href="https://movin-in.github.io">
+  <title>Movin' In - Open Source Rental Property Management Platform</title>
+  <link rel="alternate" hreflang="en" href="https://movin-in.github.io/?lang=en" />
+  <link rel="alternate" hreflang="fr" href="https://movin-in.github.io/?lang=fr" />
+  <link rel="alternate" hreflang="es" href="https://movin-in.github.io/?lang=es" />
+  <link rel="alternate" hreflang="pt" href="https://movin-in.github.io/?lang=pt" />
+  <link rel="alternate" hreflang="ja" href="https://movin-in.github.io/?lang=ja" />
+  <link rel="alternate" hreflang="zh" href="https://movin-in.github.io/?lang=zh" />
+  <link rel="alternate" hreflang="x-default" href="https://movin-in.github.io/" />
+  <link rel="canonical" href="https://movin-in.github.io/" />
   <link rel="icon" href="/favicon.png">
-  <!-- Google Analytics -->
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <style>
+    html[data-loading] body {
+      visibility: hidden;
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZHVBZFNXT"></script>
   <script>
     window.dataLayer = window.dataLayer || []
@@ -21,8 +33,6 @@
     gtag('js', new Date())
     gtag('config', 'G-PZHVBZFNXT')
   </script>
-  <!-- End Google Analytics -->
-  <link rel="stylesheet" href="/src/css/style.css" />
 </head>
 
 <body>
@@ -67,6 +77,9 @@
                 <li><button data-lang="en">English</button></li>
                 <li><button data-lang="fr">Français</button></li>
                 <li><button data-lang="es">Español</button></li>
+                <li><button data-lang="pt">Português</button></li>
+                <li><button data-lang="zh">中文</button></li>
+                <li><button data-lang="ja">日本語</button></li>
               </ul>
             </div>
           </li>
@@ -92,8 +105,7 @@
             </button>
           </li>
           <li>
-            <a href="https://github.com/aelassas/movinin" target="_blank" rel="noopener noreferrer"
-              class="github-link">
+            <a href="https://github.com/aelassas/movinin" target="_blank" rel="noopener noreferrer" class="github-link">
               <span class="github-link-content">
                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" fill="currentColor"
                   style="margin-left: 4px; vertical-align: middle;">
@@ -127,7 +139,8 @@
     <div class="container">
       <h3 data-i18n="about.title">Free, Cross-Platform, Open Source</h3>
       <p data-i18n="about.description">
-        Movin' In is an open-source rental property management platform licensed under MIT. This means you're free to use, modify, share,
+        Movin' In is an open-source rental property management platform licensed under MIT. This means you're free to
+        use, modify, share,
         or even sell it. It works smoothly on web, Android, and iOS devices.
       </p>
     </div>
@@ -288,8 +301,8 @@
     <div class="container">
       <h3 data-i18n="contact.title">Contact Us</h3>
       <form action="https://formspree.io/f/mgvwkgzn" method="POST">
-        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.namePlaceholder" autocomplete="name"
-          required />
+        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.namePlaceholder"
+          autocomplete="name" required />
         <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.emailPlaceholder"
           autocomplete="email" required />
         <textarea name="message" placeholder="Message" data-i18n-placeholder="contact.messagePlaceholder"
