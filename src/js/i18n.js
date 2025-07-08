@@ -11,12 +11,26 @@ window.currentLang = 'en'
 export const supportedLangs = ['en', 'fr', 'de', 'es', 'pt', 'zh', 'ja']
 
 /**
+ * The key used to store language translations in sessionStorage.
+ * @type {string}
+ */
+const CACHE_KEY = 'i18n-cache'
+
+/**
+ * Time-to-live (TTL) for cached translations in milliseconds.
+ * After this duration, the cached translations are considered stale.
+ * Currently set to 10 minutes.
+ * @type {number}
+ */
+const CACHE_TTL = 10 * 60 * 1000
+
+/**
  * Applies the given translations to all elements with
  * `data-i18n` and `data-i18n-placeholder` attributes.
  * For `data-i18n`, sets `textContent` or `innerHTML` based on content.
  * For `data-i18n-placeholder`, sets the placeholder attribute.
  *
- * @param {Object.<string,string>} translations - Key-value pairs of translation strings.
+ * @param {Object.<string,string>} translations
  */
 export function applyTranslations(translations) {
   window.translations = translations
@@ -46,11 +60,57 @@ export function applyTranslations(translations) {
 }
 
 /**
+ * Get translations from cache (if valid).
+ * @param {string} lang
+ * @returns {Object|null}
+ */
+function getCachedTranslations(lang) {
+  try {
+    const raw = sessionStorage.getItem(CACHE_KEY)
+    if (!raw) return null
+
+    const cache = JSON.parse(raw)
+    const entry = cache[lang]
+    if (!entry) return null
+
+    if (Date.now() - entry.timestamp > CACHE_TTL) return null
+    return entry.translations
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Store translations in sessionStorage cache.
+ * @param {string} lang
+ * @param {Object} translations
+ */
+function setCachedTranslations(lang, translations) {
+  try {
+    const raw = sessionStorage.getItem(CACHE_KEY)
+    const cache = raw ? JSON.parse(raw) : {}
+    cache[lang] = {
+      timestamp: Date.now(),
+      translations,
+    }
+    sessionStorage.setItem(CACHE_KEY, JSON.stringify(cache))
+  } catch (err) {
+    console.warn(`Failed to cache translations for "${lang}":`, err)
+  }
+}
+
+/**
+ * Clear i18n cache on page unload.
+ */
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem(CACHE_KEY)
+})
+
+/**
  * Highlights the currently selected language button by
  * setting the `data-selected` attribute.
  *
  * @param {string} lang - The language code to highlight.
- * @private
  */
 function highlightSelectedLang(lang) {
   document.querySelectorAll('[data-lang]').forEach(btn => {
@@ -75,16 +135,19 @@ export async function setLang(lang) {
     localStorage.setItem('lang', lang)
     document.documentElement.lang = lang
 
-    const res = await fetch(`locales/${lang}.json`)
-    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    let translations = getCachedTranslations(lang)
 
-    const translations = await res.json()
+    if (!translations) {
+      const res = await fetch(`locales/${lang}.json`)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      translations = await res.json()
+      setCachedTranslations(lang, translations)
+    }
+
     applyTranslations(translations)
-
     window.currentLang = lang
     document.title = translations['website.title'] || document.title
 
-    // Update URL query parameter without reloading page
     const url = new URL(window.location)
     url.searchParams.set('lang', lang)
     window.history.replaceState({}, '', url)
@@ -119,16 +182,3 @@ export async function loadInitialLanguage() {
 
   document.documentElement.removeAttribute('data-loading')
 }
-
-// On DOMContentLoaded, set language automatically based on URL or localStorage
-window.addEventListener('DOMContentLoaded', () => {
-  const params = new URLSearchParams(window.location.search)
-  const urlLang = params.get('lang')
-  const storedLang = localStorage.getItem('lang')
-
-  const lang = supportedLangs.includes(urlLang) ? urlLang
-    : supportedLangs.includes(storedLang) ? storedLang
-      : 'en'
-
-  setLang(lang)
-})

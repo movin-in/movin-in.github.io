@@ -4,7 +4,7 @@ import {
   initHeaderScroll,
   initLanguageMenu,
   initThemeToggle,
-  updateDownloadLink,
+  initDownloadLink,
   updateFooterYear
 } from './ui.js'
 
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     initHeaderScroll()         // Header border on scroll
     initLanguageMenu(setLang)  // Language dropdown logic
     initThemeToggle()          // Light/dark mode toggle
-    await updateDownloadLink() // Fetch latest mobile APK link
+    initDownloadLink()         // Fetch latest mobile APK link
     updateFooterYear()         // Set current year in footer
   } catch (err) {
     console.error('Error during app initialization:', err)
