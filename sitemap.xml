@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage URLs -->
   <url>
     <loc>https://movin-in.github.io/</loc>
   </url>
@@ -24,57 +23,5 @@
   </url>
   <url>
     <loc>https://movin-in.github.io/?lang=ja</loc>
-  </url>
-
-  <!-- Privacy policy URLs -->
-  <url>
-    <loc>https://movin-in.github.io/privacy/</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/privacy/?lang=en</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/privacy/?lang=fr</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/privacy/?lang=de</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/privacy/?lang=es</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/privacy/?lang=pt</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/privacy/?lang=zh</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/privacy/?lang=ja</loc>
-  </url>
-
-  <!-- Terms of service URLs -->
-  <url>
-    <loc>https://movin-in.github.io/terms/</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/terms/?lang=en</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/terms/?lang=fr</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/terms/?lang=de</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/terms/?lang=es</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/terms/?lang=pt</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/terms/?lang=zh</loc>
-  </url>
-  <url>
-    <loc>https://movin-in.github.io/terms/?lang=ja</loc>
   </url>
 </urlset>
