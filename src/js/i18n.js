@@ -1,4 +1,11 @@
 /**
+ * Base URL.
+ *
+ * @type {string}
+ */
+const base = import.meta.env.BASE_URL || '/'
+
+/**
  * Current language code used on the website.
  * @type {string}
  */
@@ -138,7 +145,7 @@ export async function setLang(lang) {
     let translations = getCachedTranslations(lang)
 
     if (!translations) {
-      const res = await fetch(`locales/${lang}.json`)
+      const res = await fetch(`${base}locales/${lang}.json`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       translations = await res.json()
       setCachedTranslations(lang, translations)
@@ -146,7 +153,17 @@ export async function setLang(lang) {
 
     applyTranslations(translations)
     window.currentLang = lang
-    document.title = translations['website.title'] || document.title
+
+    // Set <title> text
+    const titleEl = document.querySelector('title')
+    const titleKey = titleEl?.getAttribute('data-i18n')
+    if (titleEl) {
+      if (titleKey && translations[titleKey]) {
+        titleEl.textContent = translations[titleKey]
+      } else if (translations['website.title']) {
+        document.title = translations['website.title']
+      }
+    }
 
     const url = new URL(window.location)
     url.searchParams.set('lang', lang)

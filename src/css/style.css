@@ -680,6 +680,39 @@ footer {
   color: var(--text);
 }
 
+footer a {
+  color: inherit;
+  font-weight: 500;
+}
+
+/* Terms/Privacy */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-wrapper main.container {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.page-wrapper main.container h1 {
+  margin-bottom: 1rem;
+}
+
+.page-wrapper main.container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.page-wrapper main.container p {
+  margin-bottom: 1.5rem;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   nav ul {

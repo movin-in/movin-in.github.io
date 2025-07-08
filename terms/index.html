@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="open-source, property rental" />
+  <meta name="description" content="Open Source Rental Property Management Platform" />
+  <title>Movin' In - Open Source Rental Property Management Platform</title>
+
+  <!-- SEO -->
+  <meta name="robots" content="index, follow" />
+  <link rel="alternate" hreflang="en" href="https://movin-in.github.io/?lang=en" />
+  <link rel="alternate" hreflang="fr" href="https://movin-in.github.io/?lang=fr" />
+  <link rel="alternate" hreflang="de" href="https://movin-in.github.io/?lang=de" />
+  <link rel="alternate" hreflang="es" href="https://movin-in.github.io/?lang=es" />
+  <link rel="alternate" hreflang="pt" href="https://movin-in.github.io/?lang=pt" />
+  <link rel="alternate" hreflang="ja" href="https://movin-in.github.io/?lang=ja" />
+  <link rel="alternate" hreflang="zh" href="https://movin-in.github.io/?lang=zh" />
+  <link rel="alternate" hreflang="x-default" href="https://movin-in.github.io/" />
+  <link rel="canonical" href="https://movin-in.github.io/" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Movin' In - Open Source Rental Property Management Platform" />
+  <meta property="og:description"
+    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties." />
+  <meta property="og:url" content="https://movin-in.github.io" />
+  <meta property="og:image" content="https://movin-in.github.io/content/cover-1.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Movin' In - Open Source Rental Property Management Platform" />
+  <meta name="twitter:description"
+    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties." />
+  <meta name="twitter:image" content="https://movin-in.github.io/content/cover-1.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.png" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZHVBZFNXT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() { dataLayer.push(arguments) }
+    gtag('js', new Date())
+    gtag('config', 'G-PZHVBZFNXT')
+  </script>
+
+  <!-- Vite build assets (JS + CSS) will be injected here -->
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="header-container">
+        <div class="title-wrapper">
+          <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon"></span>
+          </button>
+          <a href="/" class="site-title">
+            <h1 data-i18n="title">Movin' In</h1>
+          </a>
+        </div>
+
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="#demo" data-i18n="nav.demo">Demo</a></li>
+            <li><a href="#support" data-i18n="nav.support">Support</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="https://github.com/aelassas/movinin/wiki" target="_blank" rel="noopener noreferrer">Docs</a>
+            </li>
+          </ul>
+          <ul class="nav-right">
+            <li>
+              <div class="lang-switcher">
+                <button id="lang-toggle" aria-expanded="false" aria-label="Language" class="lang-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" aria-hidden="true" data-slot="icon" height="20">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802">
+                    </path>
+                  </svg>
+                </button>
+                <ul id="lang-menu" class="lang-menu" hidden>
+                  <li><button data-lang="en">English</button></li>
+                  <li><button data-lang="fr">Français</button></li>
+                  <li><button data-lang="de">Deutsch</button></li>
+                  <li><button data-lang="es">Español</button></li>
+                  <li><button data-lang="pt">Português</button></li>
+                  <li><button data-lang="zh">中文</button></li>
+                  <li><button data-lang="ja">日本語</button></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" class="theme-toggle-btn">
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"
+                  style="display:none;">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                  <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"></path>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a href="https://github.com/aelassas/movinin" target="_blank" rel="noopener noreferrer"
+                class="github-link" aria-label="View Movin' In repository on GitHub">
+                <span class="github-link-content">
+                  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" fill="currentColor"
+                    style="margin-left: 4px; vertical-align: middle;">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 
+           0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+           -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+           0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.54 7.54 0 012-.27c.68.003
+           1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+           0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013
+           8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1 data-i18n="terms.title">Terms of Service</h1>
+
+      <p data-i18n="terms.intro">
+        These terms govern your use of the Movin' In website and services. By using this site, you agree to them.
+      </p>
+
+      <h2 data-i18n="terms.usage">Use of the Website</h2>
+      <p data-i18n="terms.usageText">
+        You agree to use Movin' In lawfully and not to misuse its services or attempt to disrupt its operation.
+      </p>
+
+      <h2 data-i18n="terms.content">Content</h2>
+      <p data-i18n="terms.contentText">
+        All content is provided "as-is" without warranty. We may update or remove content at any time.
+      </p>
+
+      <h2 data-i18n="terms.license">License</h2>
+      <p data-i18n="terms.licenseText">
+        Movin' In is licensed under the MIT License. You are free to use, copy, and modify the codebase under the terms
+        of
+        this license.
+      </p>
+
+      <h2 data-i18n="terms.liability">Limitation of Liability</h2>
+      <p data-i18n="terms.liabilityText">
+        Movin' In is provided as-is. We are not liable for any damages resulting from its use.
+      </p>
+
+      <h2 data-i18n="terms.changes">Changes to These Terms</h2>
+      <p data-i18n="terms.changesText">
+        Terms may change over time. Continued use of the site means you accept the updated terms.
+      </p>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Copyright © <span id="year"></span> <a href="https://movin-in.github.io">Movin' In</a>. <span
+            data-i18n="footer.copyright">All rights
+            reserved.</span> | <a href="/terms/" data-i18n="terms.title">Terms of Service</a> | <a href="/privacy/"
+            data-i18n="privacy.title">Privacy Policy</a></p>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/js/terms.js"></script>
+</body>
+
+</html>
