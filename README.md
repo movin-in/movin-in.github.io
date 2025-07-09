@@ -12,7 +12,7 @@ The website is built using [Vite](https://vitejs.dev/) with plain HTML, CSS, and
 
 Feel free to explore the code, see how everything works, suggest improvements, or use it as a starting point or template to build your own landing page.
 
-## Website Features (Not BookCars Platform)
+## Website Features (Not Movin' In Platform)
 
 - Multilingual support (English, French, German, Spanish, Portuguese, Japanese, Chinese)
 - Responsive and accessible design  
