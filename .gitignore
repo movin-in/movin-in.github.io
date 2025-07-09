@@ -31,9 +31,6 @@ deno.jsonc
 # macOS
 .DS_Store
 
-# VSCode
-.vscode/
-
 # ESLint
 .eslintcache
 
