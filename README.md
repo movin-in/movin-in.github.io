@@ -20,6 +20,22 @@ This website presents the main features, demo, support, and contact sections to 
 - Demo links and contact form integration  
 - Simple, clean, and modern UI built with Vite
 
+## Separation of Concerns (SoC)
+
+Each file/module has a single responsibility, helping keep the codebase clean and maintainable:
+
+| File / Module        | Responsibility (Concern)                                      | Description                                                                 |
+|----------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------|
+| `index.html`         | Structure / Content                                           | Defines the HTML structure and semantic layout of the page.                |
+| `style.css`          | Presentation (Styling)                                        | Handles layout, colors, fonts, and responsive design using CSS.            |
+| `i18n.js`            | Internationalization (i18n)                                   | Manages language loading, switching, and translation key resolution.       |
+| `ui.js`              | UI Behavior / Interactivity                                   | Manages dynamic UI features like header/footer loading, scroll effects, hamburger menu, theme toggle, etc. |
+| `main.js`            | Application Initialization / Coordination                     | Initializes the app, connects modules together, and runs on DOM ready.     |
+| `vite.config.js`     | Build Tool Configuration                                      | Configures how files are served and built using Vite.                      |
+| `public/` folder     | Static Assets                                                 | Contains images, icons, and static resources directly served as-is.        |
+
+By keeping each concern isolated in its own file, the project becomes easier to understand, test, and extend.
+
 ## Getting Started
 
 ### Prerequisites
