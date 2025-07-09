@@ -3,59 +3,60 @@
 
 <head>
   <!-- Basic Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="open-source, property rental" />
-  <meta name="description" content="Open Source Rental Property Management Platform" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="open-source, property rental">
+  <meta name="description" content="Open Source Rental Property Management Platform">
   <title>Movin' In - Open Source Rental Property Management Platform</title>
 
   <!-- SEO -->
-  <meta name="robots" content="index, follow" />
-  <link rel="alternate" hreflang="en" href="https://movin-in.github.io/?lang=en" />
-  <link rel="alternate" hreflang="fr" href="https://movin-in.github.io/?lang=fr" />
-  <link rel="alternate" hreflang="de" href="https://movin-in.github.io/?lang=de" />
-  <link rel="alternate" hreflang="es" href="https://movin-in.github.io/?lang=es" />
-  <link rel="alternate" hreflang="pt" href="https://movin-in.github.io/?lang=pt" />
-  <link rel="alternate" hreflang="ja" href="https://movin-in.github.io/?lang=ja" />
-  <link rel="alternate" hreflang="zh" href="https://movin-in.github.io/?lang=zh" />
-  <link rel="alternate" hreflang="x-default" href="https://movin-in.github.io/" />
-  <link rel="canonical" href="https://movin-in.github.io/" />
+  <meta name="robots" content="index, follow">
+  <link rel="alternate" hreflang="en" href="https://movin-in.github.io/?lang=en">
+  <link rel="alternate" hreflang="fr" href="https://movin-in.github.io/?lang=fr">
+  <link rel="alternate" hreflang="de" href="https://movin-in.github.io/?lang=de">
+  <link rel="alternate" hreflang="es" href="https://movin-in.github.io/?lang=es">
+  <link rel="alternate" hreflang="pt" href="https://movin-in.github.io/?lang=pt">
+  <link rel="alternate" hreflang="ja" href="https://movin-in.github.io/?lang=ja">
+  <link rel="alternate" hreflang="zh" href="https://movin-in.github.io/?lang=zh">
+  <link rel="alternate" hreflang="x-default" href="https://movin-in.github.io/">
+  <link rel="canonical" href="https://movin-in.github.io/">
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Movin' In - Open Source Rental Property Management Platform" />
+  <meta property="og:title" content="Movin' In - Open Source Rental Property Management Platform">
   <meta property="og:description"
-    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties." />
-  <meta property="og:url" content="https://movin-in.github.io" />
-  <meta property="og:image" content="https://movin-in.github.io/content/cover-1.png" />
+    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties.">
+  <meta property="og:url" content="https://movin-in.github.io">
+  <meta property="og:image" content="https://movin-in.github.io/content/cover-1.png">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Movin' In - Open Source Rental Property Management Platform" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Movin' In - Open Source Rental Property Management Platform">
   <meta name="twitter:description"
-    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties." />
-  <meta name="twitter:image" content="https://movin-in.github.io/content/cover-1.png" />
+    content="Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties.">
+  <meta name="twitter:image" content="https://movin-in.github.io/content/cover-1.png">
 
   <!-- Favicon -->
-  <link rel="icon" href="/favicon.png" />
+  <link rel="icon" href="/favicon.png">
+
+  <!-- preconnect -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="https://buttons.github.io" crossorigin>
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZHVBZFNXT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() { dataLayer.push(arguments) }
-    gtag('js', new Date())
-    gtag('config', 'G-PZHVBZFNXT')
+  <script type="module">
+    import { initGA } from './src/js/ga.js'
+    initGA('G-PZHVBZFNXT')
   </script>
 
   <!-- Vite build assets (JS + CSS) will be injected here -->
-  <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
   <header>
     <div class="header-container">
       <div class="title-wrapper">
-        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <button type="button" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="icon"></span>
         </button>
         <a href="/" class="site-title">
@@ -75,7 +76,7 @@
         <ul class="nav-right">
           <li>
             <div class="lang-switcher">
-              <button id="lang-toggle" aria-expanded="false" aria-label="Language" class="lang-button">
+              <button id="lang-toggle" type="button" aria-expanded="false" aria-label="Language" class="lang-button">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" aria-hidden="true" data-slot="icon" height="20">
                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -84,18 +85,19 @@
                 </svg>
               </button>
               <ul id="lang-menu" class="lang-menu" hidden>
-                <li><button data-lang="en">English</button></li>
-                <li><button data-lang="fr">Français</button></li>
-                <li><button data-lang="de">Deutsch</button></li>
-                <li><button data-lang="es">Español</button></li>
-                <li><button data-lang="pt">Português</button></li>
-                <li><button data-lang="zh">中文</button></li>
-                <li><button data-lang="ja">日本語</button></li>
+                <li><button data-lang="en" type="button">English</button></li>
+                <li><button data-lang="fr" type="button">Français</button></li>
+                <li><button data-lang="de" type="button">Deutsch</button></li>
+                <li><button data-lang="es" type="button">Español</button></li>
+                <li><button data-lang="pt" type="button">Português</button></li>
+                <li><button data-lang="zh" type="button">中文</button></li>
+                <li><button data-lang="ja" type="button">日本語</button></li>
               </ul>
             </div>
           </li>
           <li>
-            <button id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" class="theme-toggle-btn">
+            <button id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false"
+              class="theme-toggle-btn">
               <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"
                 style="display:none;">
@@ -119,8 +121,7 @@
             <a href="https://github.com/aelassas/movinin" target="_blank" rel="noopener noreferrer" class="github-link"
               aria-label="View Movin' In repository on GitHub">
               <span class="github-link-content">
-                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" fill="currentColor"
-                  style="margin-left: 4px; vertical-align: middle;">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" fill="currentColor">
                   <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 
            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
@@ -163,7 +164,7 @@
       <div class="container">
         <h3 data-i18n="features.title">Features</h3>
 
-        <h4 data-i18n="features.agency_title">Agency & Property Management</h4>
+        <h4 data-i18n="features.agency_title">Agency &amp; Property Management</h4>
         <ul>
           <li data-i18n="features.agency_management">Agency management</li>
           <li data-i18n="features.single_or_multi_agency">Ready for single or multiple agencies</li>
@@ -174,7 +175,7 @@
           <li data-i18n="features.auto_notifications">Auto-Notification System</li>
         </ul>
 
-        <h4 data-i18n="features.pricing_title">Pricing & Payments</h4>
+        <h4 data-i18n="features.pricing_title">Pricing &amp; Payments</h4>
         <ul>
           <li data-i18n="features.payment_management">Payment management</li>
           <li data-i18n="features.payment_gateways">Multiple payment gateways supported (Stripe, PayPal)</li>
@@ -182,7 +183,7 @@
             Link, Pay at the counter, Pay in full, Pay deposit</li>
         </ul>
 
-        <h4 data-i18n="features.locations_title">Locations & Mapping</h4>
+        <h4 data-i18n="features.locations_title">Locations &amp; Mapping</h4>
         <ul>
           <li data-i18n="features.hierarchical_locations">Hierarchical locations with country and integration</li>
           <li data-i18n="features.location_search">Location-based search with nested child location support</li>
@@ -201,7 +202,7 @@
           <li data-i18n="features.push_notifications">Push notifications</li>
         </ul>
 
-        <h4 data-i18n="features.security_title">Security & Performance</h4>
+        <h4 data-i18n="features.security_title">Security &amp; Performance</h4>
         <ul>
           <li data-i18n="features.security">Secure against XSS, XST, CSRF, MITM, and DDoS attacks</li>
           <li data-i18n="features.responsive">Responsive admin panel and frontend</li>
@@ -309,7 +310,7 @@
         </p>
 
         <div id="github-issues-support">
-          <h4 data-i18n="githubIssues.title">Report Bugs & Request Features</h4>
+          <h4 data-i18n="githubIssues.title">Report Bugs &amp; Request Features</h4>
           <p data-i18n="githubIssues.description">
             Found a bug or want a new feature? Please help improve the project by
             <a href="https://github.com/aelassas/movinin/issues" target="_blank" rel="noopener noreferrer"
@@ -324,9 +325,9 @@
         <h3 data-i18n="contact.title">Contact Us</h3>
         <form action="https://formspree.io/f/mgvwkgzn" method="POST">
           <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.namePlaceholder"
-            autocomplete="name" required />
+            autocomplete="name" required>
           <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.emailPlaceholder"
-            autocomplete="email" required />
+            autocomplete="email" required>
           <textarea name="message" placeholder="Message" data-i18n-placeholder="contact.messagePlaceholder"
             required></textarea>
           <button type="submit" data-i18n="contact.submit">Send</button>
@@ -337,8 +338,8 @@
 
   <footer>
     <div class="container">
-      <p>Copyright © <span id="year"></span> <a href="https://movin-in.github.io">Movin' In</a>. <span
-          data-i18n="footer.copyright">All rights reserved.</span></p>
+      <p>Copyright © <span id="year"></span> <a href="/">Movin' In</a>. <span data-i18n="footer.copyright">All rights
+          reserved.</span></p>
     </div>
   </footer>
 

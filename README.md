@@ -1,3 +1,5 @@
+[![deploy](https://github.com/movin-in/movin-in.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/movin-in/movin-in.github.io/actions/workflows/deploy.yml) [![lighthouse](https://github.com/movin-in/movin-in.github.io/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/movin-in/movin-in.github.io/actions/workflows/lighthouse.yml)
+
 # Movin' In Website
 
 This repository contains the source code for the [Movin' In](https://movin-in.github.io/) official landing page.

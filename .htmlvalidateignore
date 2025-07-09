@@ -1,0 +1,17 @@
+# Ignore build output
+dist/
+
+# Node dependencies
+node_modules/
+
+# Vite cache
+.vite/
+
+# VSCode settings
+.vscode/
+
+# Git-related files
+.git/
+
+# Public folder
+public/

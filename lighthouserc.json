@@ -1,0 +1,17 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./dist",
+      "numberOfRuns": 1
+    },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "network-dependency-tree-insight": ["warn", { "minScore": 0 }]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}

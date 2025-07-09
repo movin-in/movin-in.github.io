@@ -173,6 +173,11 @@ nav a:focus {
   align-items: center;
 }
 
+.github-link-content svg {
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
 .github-link-text {
   margin-right: 5px;
 }

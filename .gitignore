@@ -3,15 +3,39 @@ node_modules/
 
 # Vite build output
 dist/
-dist-ssr/
 
-# Local environment files
-*.local
-
-# Optional: Vite cache (optional but good to exclude)
+# Vite cache
 .vite/
 
-# Optional: Mac/Linux/VSCode extras
-.DS_Store
+# Yarn
+.yarn/
+.pnp.*
+.yarnrc.yml
+
+# pnpm
+.pnpm/
+pnpm-lock.yaml
+
+# Bun
+.bun/
+bun.lockb
+
+# Deno
+deno.lock
+deno.json
+deno.jsonc
+
+# Log files
 *.log
+
+# macOS
+.DS_Store
+
+# VSCode
 .vscode/
+
+# ESLint
+.eslintcache
+
+# Lighthouse 
+.lighthouseci

@@ -139,9 +139,13 @@ function highlightSelectedLang(lang) {
  */
 export async function setLang(lang) {
   try {
+    // Persist selected language in local storage
     localStorage.setItem('lang', lang)
+
+    // Update the document's <html lang="..."> attribute
     document.documentElement.lang = lang
 
+    // Load translations from cache or fetch from server
     let translations = getCachedTranslations(lang)
 
     if (!translations) {
@@ -151,10 +155,13 @@ export async function setLang(lang) {
       setCachedTranslations(lang, translations)
     }
 
+    // Apply translations to the current page
     applyTranslations(translations)
+
+    // Store current language globally
     window.currentLang = lang
 
-    // Set <title> text
+    // Set the document <title> using i18n key if available
     const titleEl = document.querySelector('title')
     const titleKey = titleEl?.getAttribute('data-i18n')
     if (titleEl) {
@@ -165,10 +172,12 @@ export async function setLang(lang) {
       }
     }
 
+    // Update URL query param `?lang=xx` without reloading the page
     const url = new URL(window.location)
     url.searchParams.set('lang', lang)
     window.history.replaceState({}, '', url)
 
+    // Visually highlight the selected language in the UI
     highlightSelectedLang(lang)
   } catch (err) {
     console.error(`Failed to load ${lang} translations:`, err)

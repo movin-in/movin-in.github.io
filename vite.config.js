@@ -14,8 +14,19 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-      }
-    }
+      },
+      // No manualChunks — let Rollup handle code splitting automatically
+    },
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        // Keep console logs, so no drop_console here
+        drop_console: false,
+      },
+      format: {
+        comments: false, // Remove comments from output
+      },
+    },
   },
   plugins: [
     createHtmlPlugin({
