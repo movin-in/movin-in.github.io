@@ -4,7 +4,7 @@
 
 [Movin' In](https://github.com/aelassas/movinin) is a modern rental property management platform offering a web frontend, native mobile apps (Android and iOS), and an admin panel.  
 
-This repository contains the source code for the [Movin' In](https://movin-in.github.io/) official landing page.
+This repository contains the source code for the [Movin' In](https://movin-in.github.io/) official landing page — a presentation site for the platform, not the platform itself.
 
 Built with a clean and simple design, this website presents the main features, demo, support, and contact sections to introduce Movin' In to users and developers.
 
