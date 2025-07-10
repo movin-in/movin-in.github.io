@@ -2,7 +2,7 @@
 
 ## About
 
-[Movin' In](https://github.com/aelassas/movinin) is a modern rental property management platform offering a web frontend, native mobile apps (Android and iOS), and an admin panel.  
+[Movin' In](https://github.com/aelassas/movinin) is a rental property management platform offering a web frontend, native mobile apps (Android and iOS), and a powerful admin panel.  
 
 This repository contains the source code for the [Movin' In](https://movin-in.github.io/) official landing page — a presentation site for the platform, not the platform itself.
 
@@ -49,7 +49,7 @@ By keeping each concern isolated in its own file, the project becomes easier to 
 Clone the repository:
 
 ```bash
-git clone https://github.com/aelassas/movin-in.github.io.git
+git clone https://github.com/movin-in/movin-in.github.io.git
 cd movin-in.github.io
 ```
 
@@ -75,7 +75,7 @@ Build the static site for production:
 npm run build
 ```
 
-The built files will be in the dist folder, ready to be deployed.
+The built files will be in the `dist/` folder, ready to be deployed.
 
 ### Preview Production Build
 
@@ -89,7 +89,7 @@ npm run preview
 
 This project is configured to be deployed on [GitHub Pages](https://pages.github.com/).
 
-After building, push the `dist` contents to the gh-pages branch or use GitHub Actions for automated deployment.
+After building, push the `dist/` contents to the `gh-pages` branch or use GitHub Actions for automated deployment.
 
 ## Contributing
 
