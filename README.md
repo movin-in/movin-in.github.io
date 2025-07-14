@@ -12,6 +12,22 @@ This website is built using [Vite](https://vitejs.dev/) with plain HTML, CSS, an
 
 Feel free to explore the code, see how everything works, suggest improvements, or use it as a starting point or template to build your own landing page.
 
+## Performance Highlights (Mobile - Slow 4G)
+
+This website delivers an exceptional experience even on slow mobile networks:
+
+| Metric                     | Value | Rating      |
+|----------------------------|-------|-------------|
+| **First Contentful Paint** | 0.8 s | ✅ Excellent |
+| **Largest Contentful Paint** | 1.5 s | ✅ Excellent |
+| **Total Blocking Time**     | 0 ms  | ✅ Perfect   |
+| **Cumulative Layout Shift** | 0     | ✅ Perfect   |
+| **Speed Index**             | 0.8   | ✅ Excellent |
+
+> ⚡ **Ultra-fast performance**  
+> The website loads in under 1.5 seconds on slow 4G with **0ms blocking**, **0 layout shift**, and a blazing **Speed Index of 0.8**.
+
+
 ## Website Features (Not Movin' In Platform)
 
 - Multilingual support (English, French, German, Spanish, Portuguese, Japanese, Chinese)
