@@ -11,7 +11,7 @@
     "lint:fix": "eslint . --fix",
     "validate:html": "html-validate .",
     "lhci": "npm run build && lhci autorun",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
