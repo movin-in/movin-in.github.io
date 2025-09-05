@@ -10,19 +10,23 @@ export function initGA(id) {
     return
   }
 
+  let loaded = false
+
   const loadAnalytics = () => {
+    if (loaded) return
+    loaded = true
+
+    window.dataLayer = window.dataLayer || []
+    window.gtag = function gtag() { window.dataLayer.push(arguments) }
+
     const script = document.createElement('script')
     script.src = `https://www.googletagmanager.com/gtag/js?id=${id}`
     script.async = true
-    document.head.appendChild(script)
-
     script.onload = () => {
-      window.dataLayer = window.dataLayer || []
-      function gtag() { window.dataLayer.push(arguments) }
-      window.gtag = gtag
-      gtag('js', new Date())
-      gtag('config', id)
+      window.gtag('js', new Date())
+      window.gtag('config', id)
     }
+    document.head.appendChild(script)
   }
 
   const startAnalytics = () => {
@@ -31,6 +35,6 @@ export function initGA(id) {
     loadAnalytics()
   }
 
-  window.addEventListener('mousemove', startAnalytics, { once: true })
-  window.addEventListener('touchstart', startAnalytics, { once: true })
+  window.addEventListener('mousemove', startAnalytics, { once: true, passive: true })
+  window.addEventListener('touchstart', startAnalytics, { once: true, passive: true })
 }
