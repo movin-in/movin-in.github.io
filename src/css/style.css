@@ -654,6 +654,7 @@ textarea {
   border-radius: var(--border-radius);
   font-family: inherit;
   width: 100%;
+  background-color: var(--background);
 }
 
 textarea {
