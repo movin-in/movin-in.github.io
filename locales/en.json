@@ -62,7 +62,7 @@
   "support.donation1": "GitHub Sponsors (one-time or monthly)",
   "support.donation2": "PayPal",
   "support.donation3": "Buy Me a Coffee",
-  "support.closing": "Open-source software requires time, effort, and resources to maintain—your support helps keep this project alive, up-to-date, and accessible to everyone. Every contribution, big or small, makes a difference and motivates continued work on features, bug fixes, and new ideas.",
+  "support.closing": "Open-source software requires time, effort, and resources to maintain. Your support helps keep this project alive, up-to-date, and accessible to everyone. Every contribution, big or small, makes a difference and motivates continued work on features, bug fixes, and new ideas.",
   "githubIssues.title": "Report Bugs & Request Features",
   "githubIssues.description": "Found a bug or want a new feature? Please help improve the project by <a href=\"https://github.com/aelassas/movinin/issues\" target=\"_blank\" rel=\"noopener noreferrer\">opening an issue on GitHub</a>.",
   "githubIssues.linkText": "opening an issue on GitHub",
