@@ -122,3 +122,4 @@ This project is licensed under the MIT License.
 * [Movin' In GitHub](https://github.com/aelassas/movinin)
 * [Movin' In Live Demo](https://movin-in.github.io/#demo)
 * [Documentation](https://github.com/aelassas/movinin/wiki)
+
