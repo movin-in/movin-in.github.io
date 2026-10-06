@@ -504,6 +504,7 @@ section h3 {
 /* Demo Section */
 #demo {
   background-color: var(--background);
+  display: none;
 }
 
 #demo .container {
