@@ -28,9 +28,9 @@
       ]
     },
     {
-      "identifier": "urn:air:movin-in.github.io:docs:llms-full-txt",
+      "identifier": "urn:air:movin-in.github.io:docs:llms-full-context",
       "displayName": "Movin' In Full Documentation Context",
-      "type": "text/markdown",
+      "type": "application/ai-registry+json",
       "url": "https://movin-in.github.io/llms-full.txt",
       "description": "Complete concatenated Markdown documentation context compiled from all Movin' In Wiki pages.",
       "representativeQueries": [
