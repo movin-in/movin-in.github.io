@@ -1,0 +1,57 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:movin-in.github.io:docs:llms-txt",
+      "displayName": "Movin' In Overview & Quick Reference for LLMs",
+      "type": "application/ai-registry+json",
+      "url": "https://movin-in.github.io/llms.txt",
+      "description": "Structured Markdown summary of Movin' In, containing core feature overviews, technology stack breakdowns, and index links to documentation sections.",
+      "representativeQueries": [
+        "what is Movin' In and what does it do",
+        "open source rental property management platform with React Node.js and React Native",
+        "property rental management system with single and multi agency support",
+        "Movin' In architecture overview and core component setup"
+      ]
+    },
+    {
+      "identifier": "urn:air:movin-in.github.io:docs:llms-full-txt",
+      "displayName": "Movin' In Complete Full-Text Documentation for LLMs",
+      "type": "application/ai-registry+json",
+      "url": "https://movin-in.github.io/llms-full.txt",
+      "description": "Complete concatenated Markdown documentation suite for Movin' In, including property booking workflows, payment gateway integrations, Docker deployments, and Expo mobile setup.",
+      "representativeQueries": [
+        "full Movin' In property rental management and booking documentation",
+        "how to configure Stripe and PayPal payment gateways in Movin' In",
+        "Movin' In property availability scheduling and location mapping logic",
+        "building and deploying Movin' In React Native mobile app with Expo"
+      ]
+    },
+    {
+      "identifier": "urn:air:movin-in.github.io:docs:llms-full-txt",
+      "displayName": "Movin' In Full Documentation Context",
+      "type": "text/markdown",
+      "url": "https://movin-in.github.io/llms-full.txt",
+      "description": "Complete concatenated Markdown documentation context compiled from all Movin' In Wiki pages.",
+      "representativeQueries": [
+        "full Movin' In backend REST API and frontend setup guides",
+        "how to setup social login for Google Facebook and Apple in Movin' In",
+        "configuring multi-agency property rental marketplace in Movin' In",
+        "Movin' In Docker deployment Nginx reverse proxy and SSL setup"
+      ]
+    },
+    {
+      "identifier": "urn:air:movin-in.github.io:docs:wiki",
+      "displayName": "Movin' In Official Wiki Documentation",
+      "type": "application/ai-registry+json",
+      "url": "https://github.com/aelassas/movinin/wiki",
+      "description": "Comprehensive wiki covering self-hosted installation, Docker setup, software architecture, payment configuration, social login guides, mobile app builds, and testing references.",
+      "representativeQueries": [
+        "how to install Movin' In on Docker or self-hosted Linux server",
+        "configure single agency or multi agency marketplace mode in Movin' In",
+        "setup push notifications and email templates in Movin' In",
+        "how to run integration tests and code coverage in Movin' In"
+      ]
+    }
+  ]
+}
