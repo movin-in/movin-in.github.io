@@ -293,7 +293,8 @@ nav a:focus {
   color: var(--lang-text);
 }
 
-[data-lang][data-selected="true"] {
+[data-lang][data-selected="true"],
+[data-lang][data-selected="true"]:hover {
   background-color: var(--lang-secondary);
   color: var(--lang-text-selected);
   font-weight: bold;
