@@ -18,23 +18,6 @@ export function initHamburgerMenu() {
 }
 
 /**
- * Initializes the header scroll effect.
- * Adds or removes the 'scrolled' class to the header based on scroll position.
- */
-export function initHeaderScroll() {
-  const header = document.querySelector('header')
-  if (!header) return
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      header.classList.add('scrolled')
-    } else {
-      header.classList.remove('scrolled')
-    }
-  })
-}
-
-/**
  * Initializes the language selection menu.
  * Toggles the language menu visibility, sets the selected language,
  * and closes the menu when clicking outside.

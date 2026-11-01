@@ -1,7 +1,6 @@
 import { loadInitialLanguage, setLang } from './i18n.js'
 import {
   initHamburgerMenu,
-  initHeaderScroll,
   initLanguageMenu,
   initThemeToggle,
   initDownloadLink,
@@ -16,7 +15,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     // Initialize UI components
     initHamburgerMenu()        // Mobile nav toggle
-    initHeaderScroll()         // Header border on scroll
     initLanguageMenu(setLang)  // Language dropdown logic
     initThemeToggle()          // Light/dark mode toggle
     initDownloadLink()         // Fetch latest mobile APK link
