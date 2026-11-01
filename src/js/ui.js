@@ -131,6 +131,33 @@ export function initDownloadLink() {
 }
 
 /**
+ * Loads the GitHub buttons script once the page has finished its own DOM updates
+ * (translations, theme, etc.) and the browser is idle. The script reads layout, so
+ * loading it while layout is dirty would cause a forced reflow.
+ */
+export function initGitHubButton() {
+  if (!document.querySelector('.github-button')) return
+
+  const load = () => {
+    const script = document.createElement('script')
+    script.src = 'https://buttons.github.io/buttons.js'
+    script.async = true
+    document.body.appendChild(script)
+  }
+
+  const onIdle = () => {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(load, { timeout: 2000 })
+    } else {
+      setTimeout(load, 200)
+    }
+  }
+
+  // Wait for a rendered frame so pending style/layout work is flushed first
+  requestAnimationFrame(() => setTimeout(onIdle, 0))
+}
+
+/**
  * Updates the footer year element with the current year.
  */
 export function updateFooterYear() {
