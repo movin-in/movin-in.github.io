@@ -473,7 +473,7 @@ nav a:focus {
   margin: 0.35rem 0.4rem;
 }
 
-.hero .btn + .btn {
+.hero .btn+.btn {
   background: transparent;
   color: var(--text);
   border-color: var(--btn-outline-border);
@@ -736,8 +736,9 @@ section h3 {
 
 #github-issues-support a {
   color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
+  font-weight: normal;
+  text-decoration: underline;
+  text-underline-offset: 2px;
   transition: color 0.2s ease;
 }
 
@@ -817,7 +818,9 @@ footer {
 
 footer a {
   color: var(--text);
-  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: normal;
 }
 
 /* Terms/Privacy */
