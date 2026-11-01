@@ -20,11 +20,28 @@ export default defineConfig({
     minify: 'terser',
     terserOptions: {
       compress: {
-        // Keep console logs, so no drop_console here
-        drop_console: false,
+        passes: 3,
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ['console.info', 'console.debug', 'console.warn'],
+        unsafe: true,
+        unsafe_arrows: true,
+        unsafe_comps: true,
+        unsafe_Function: true,
+        unsafe_math: true,
+        unsafe_symbols: true,
+        unsafe_proto: true,
+        hoist_funs: true,
+        hoist_vars: true,
+        sequences: true,
+        dead_code: true,
+      },
+      mangle: {
+        toplevel: true,
       },
       format: {
-        comments: false, // Remove comments from output
+        comments: false,
+        ascii_only: true,
       },
     },
   },
