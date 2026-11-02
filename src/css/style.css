@@ -1,5 +1,5 @@
 :root {
-  --background: #fff;
+  --background: #ffffff;
   --background-dark: #f6f8fb;
   --card-bg: #fff;
   --text: #1f2933;
@@ -11,7 +11,7 @@
   --accent: #2563eb;
   --accent-soft: rgba(37, 99, 235, 0.1);
   --accent-glow: rgba(37, 99, 235, 0.14);
-  --feature-accent: #E1EAFC;
+  --feature-accent: #1f2933;
   --feature-accent-soft: rgba(139, 188, 245, 0.18);
   --muted: #5b6573;
   --lang-text-bg: #fff;
@@ -417,10 +417,7 @@ nav a:focus {
 
 /* Hero Section */
 .hero {
-  background:
-    radial-gradient(ellipse 70% 60% at 50% 0%, var(--accent-glow), transparent 70%),
-    radial-gradient(ellipse 40% 40% at 90% 100%, var(--accent-soft), transparent 70%),
-    var(--background);
+  background: var(--background);
   padding: 14rem 2rem 6rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
@@ -821,8 +818,8 @@ textarea::placeholder {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
+  border-color: var(--feature-accent);
+  box-shadow: 0 0 0 3px var(--feature-accent-soft);
 }
 
 textarea {
