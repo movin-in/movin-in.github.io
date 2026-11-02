@@ -582,7 +582,6 @@ section h3 {
 #features ul li:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-  border-color: var(--feature-accent);
 }
 
 /* Demo Section */
