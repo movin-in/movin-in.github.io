@@ -418,7 +418,7 @@ nav a:focus {
 /* Hero Section */
 .hero {
   background: var(--background);
-  padding: 14rem 2rem 6rem;
+  padding: 14rem 2rem 8rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
 }
