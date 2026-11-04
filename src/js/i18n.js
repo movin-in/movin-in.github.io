@@ -15,7 +15,7 @@ window.currentLang = 'en'
  * List of supported language codes.
  * @type {string[]}
  */
-export const supportedLangs = ['en', 'fr', 'de', 'es', 'pt', 'zh', 'ja']
+export const supportedLangs = ['en', 'fr', 'de', 'es', 'pt', 'it', 'zh', 'ja']
 
 /**
  * The key used to store language translations in sessionStorage.
