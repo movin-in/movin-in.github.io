@@ -31,7 +31,7 @@
   "features.user_title": "Benutzererlebnis",
   "features.customer_management": "Kundenverwaltung",
   "features.login_options": "Mehrere Anmeldeoptionen: Google, Facebook, Apple, E-Mail",
-  "features.multilang": "Mehrsprachige Unterstützung: Englisch, Französisch, Deutsch, Spanisch, Portugiesisch (europäisch)",
+  "features.multilang": "Mehrsprachige Unterstützung: Englisch, Französisch, Deutsch, Spanisch, Portugiesisch (europäisch), Italienisch, Chinesisch (vereinfacht), Japanisch",
   "features.multicurrency": "Unterstützung mehrerer Währungen",
   "features.pagination_styles": "Mehrere Paginierungsstile: klassisch (weiter/zurück), unendliches Scrollen",
   "features.push_notifications": "Push-Benachrichtigungen",
