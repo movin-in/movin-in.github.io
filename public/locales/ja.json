@@ -31,7 +31,7 @@
   "features.user_title": "ユーザーエクスペリエンス",
   "features.customer_management": "顧客管理",
   "features.login_options": "複数のログインオプション：Google、Facebook、Apple、メール",
-  "features.multilang": "多言語対応：英語、フランス語、ドイツ語",
+  "features.multilang": "多言語対応：英語、フランス語、ドイツ語、スペイン語",
   "features.multicurrency": "複数通貨対応",
   "features.pagination_styles": "複数のページネーションスタイル：クラシック（次/前）、無限スクロール",
   "features.push_notifications": "プッシュ通知",

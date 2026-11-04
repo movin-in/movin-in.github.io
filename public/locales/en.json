@@ -31,7 +31,7 @@
   "features.user_title": "User Experience",
   "features.customer_management": "Customer management",
   "features.login_options": "Multiple login options: Google, Facebook, Apple, Email",
-  "features.multilang": "Multiple language support: English, French, German",
+  "features.multilang": "Multiple language support: English, French, German, Spanish",
   "features.multicurrency": "Multiple currencies support",
   "features.pagination_styles": "Multiple pagination styles: classic (next/previous), infinite scroll",
   "features.push_notifications": "Push notifications",
