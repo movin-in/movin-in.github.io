@@ -10,7 +10,7 @@
   "hero.cta": "实时演示",
   "hero.get_started": "开始使用",
   "about.title": "免费、跨平台、开源",
-  "about.description": "Movin' In 是一款基于 MIT 许可的开源租赁物业管理平台。这意味着您可以自由使用、修改、分享甚至出售。它能在网页、Android 和 iOS 设备上顺畅运行。",
+  "about.description": "Movin' In 是一款基于 MIT 许可发布的开源租赁物业管理平台，您可以自由使用、修改、分享甚至出售。它支持单机构和多机构两种模式，并内置 Stripe 和 PayPal 支付网关。支持 8 种语言（英语、法语、西班牙语、德语、葡萄牙语、意大利语、中文和日语）和 134 种货币。它能防御常见的 Web 攻击（XSS、CSRF、MITM 和 DDoS），并集成 Sentry 错误监控，可通过 Docker 轻松部署，在网页、Android 和 iOS 上都能顺畅运行。",
   "features.title": "功能",
   "features.agency_title": "代理机构与物业管理",
   "features.agency_management": "代理机构管理",

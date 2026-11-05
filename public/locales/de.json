@@ -10,7 +10,7 @@
   "hero.cta": "Live-Demo",
   "hero.get_started": "Loslegen",
   "about.title": "Kostenlos, plattformübergreifend, Open Source",
-  "about.description": "Movin' In ist eine Open-Source-Plattform zur Verwaltung von Mietobjekten, lizenziert unter der MIT-Lizenz. Das bedeutet, dass Sie sie frei nutzen, ändern, teilen oder sogar verkaufen dürfen. Sie funktioniert reibungslos auf Web-, Android- und iOS-Geräten.",
+  "about.description": "Movin' In ist eine Open-Source-Plattform zur Verwaltung von Mietobjekten, veröffentlicht unter der MIT-Lizenz – Sie dürfen sie also frei nutzen, ändern, teilen oder sogar verkaufen. Sie unterstützt Einzel- und Mehrfachagentur-Setups, mit integrierten Zahlungsgateways für Stripe und PayPal. Sie ist in 8 Sprachen verfügbar (Englisch, Französisch, Spanisch, Deutsch, Portugiesisch, Italienisch, Chinesisch und Japanisch) und unterstützt 134 Währungen. Geschützt vor gängigen Webangriffen (XSS, CSRF, MITM und DDoS) und mit Fehlerüberwachung durch Sentry lässt sie sich einfach mit Docker bereitstellen und läuft reibungslos auf Web, Android und iOS.",
   "features.title": "Funktionen",
   "features.agency_title": "Agentur- & Immobilienverwaltung",
   "features.agency_management": "Agenturverwaltung",
