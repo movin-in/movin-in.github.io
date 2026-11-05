@@ -10,7 +10,7 @@
   "hero.cta": "Live Demo",
   "hero.get_started": "Get Started",
   "about.title": "Free, Cross-Platform, Open-Source",
-  "about.description": "Movin' In is an open-source rental property management platform released under the MIT license, so you're free to use, modify, share, or even sell it. It supports single-agency and multi-agency setups, with Stripe and PayPal payment gateways built in. It is available in 8 languages (English, French, Spanish, German, Portuguese, Italian, Chinese, and Japanese) and supports 134 currencies. Protected against common web attacks (XSS, CSRF, MITM, and DDoS) and including Sentry error monitoring, it deploys easily with Docker and runs smoothly on web, Android, and iOS.",
+  "about.description": "Movin' In is an open-source rental property management platform released under the MIT license, so you're free to use, modify, share, or even sell it. It supports single-agency and multi-agency setups, with Stripe and PayPal payment gateways built in. It is available in 8 languages (English, French, Spanish, German, Portuguese, Italian, Chinese, and Japanese) and supports 134 currencies. It is protected against common web attacks (XSS, CSRF, MITM, and DDoS) and secured with JWT authentication, Redis-backed rate limiting, Google reCAPTCHA on public forms, and request validation. It also includes error monitoring with Sentry and deploys easily with Docker. It runs smoothly on web, Android, and iOS.",
   "features.title": "Features",
   "features.agency_title": "Agency & Property Management",
   "features.agency_management": "Agency management",
