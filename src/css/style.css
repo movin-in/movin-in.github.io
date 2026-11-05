@@ -507,6 +507,10 @@ section h3 {
   color: var(--muted);
 }
 
+.about-section p + p {
+  margin-top: 1rem;
+}
+
 /* Features Section */
 #features {
   background-color: var(--background);
