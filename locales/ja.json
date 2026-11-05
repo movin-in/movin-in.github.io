@@ -10,7 +10,7 @@
   "hero.cta": "ライブデモ",
   "hero.get_started": "始める",
   "about.title": "無料、クロスプラットフォーム、オープンソース",
-  "about.description": "Movin' InはMITライセンスのオープンソース賃貸物件管理プラットフォームです。これにより、自由に使用、修正、共有、販売することができます。ウェブ、Android、iOSデバイスでスムーズに動作します。",
+  "about.description": "Movin' In は、MIT ライセンスで公開されているオープンソースの賃貸物件管理プラットフォームです。自由に使用、改変、共有、さらには販売することもできます。単一代理店と複数代理店の両方の構成に対応し、Stripe と PayPal の決済ゲートウェイを標準搭載しています。8 言語（英語、フランス語、スペイン語、ドイツ語、ポルトガル語、イタリア語、中国語、日本語）と 134 通貨に対応しています。一般的な Web 攻撃（XSS、CSRF、MITM、DDoS）から保護され、Sentry によるエラー監視も備えており、Docker で簡単にデプロイでき、Web、Android、iOS でスムーズに動作します。",
   "features.title": "機能",
   "features.agency_title": "代理店＆物件管理",
   "features.agency_management": "代理店管理",
