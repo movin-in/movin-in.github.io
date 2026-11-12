@@ -1,5 +1,6 @@
 {
   "website.title": "Movin' In - 开源租赁物业管理平台",
+  "website.description": "Movin' In 是一款开源且跨平台的租赁物业管理平台，包含用于管理物业、客户和预订的管理面板、网页前端以及用于租赁物业的移动应用。",
   "title": "Movin' In",
   "nav.features": "功能",
   "nav.demo": "演示",

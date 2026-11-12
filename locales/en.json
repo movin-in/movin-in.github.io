@@ -1,5 +1,6 @@
 {
   "website.title": "Movin' In - Open-Source Rental Property Management Platform",
+  "website.description": "Movin' In is an open-source and cross-platform Rental Property Management Platform with an admin panel for managing properties, customers and bookings, a frontend and a mobile app for renting properties.",
   "title": "Movin' In",
   "nav.features": "Features",
   "nav.demo": "Demo",

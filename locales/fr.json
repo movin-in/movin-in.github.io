@@ -1,5 +1,6 @@
 {
   "website.title": "Movin' In - Plateforme Open Source de Gestion Locative",
+  "website.description": "Movin' In est une plateforme open source et multiplateforme de gestion de biens locatifs avec un panneau d'administration pour gérer les biens, les clients et les réservations, une interface web et une application mobile pour la location de biens.",
   "title": "Movin' In",
   "nav.features": "Fonctionnalités",
   "nav.demo": "Démo",

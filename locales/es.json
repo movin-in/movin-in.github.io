@@ -1,5 +1,6 @@
 {
   "website.title": "Movin' In - Plataforma de Gestión de Alquileres de Código Abierto",
+  "website.description": "Movin' In es una plataforma de gestión de propiedades en alquiler de código abierto y multiplataforma con un panel de administración para gestionar propiedades, clientes y reservas, una interfaz web y una app móvil para alquilar propiedades.",
   "title": "Movin' In",
   "nav.features": "Características",
   "nav.demo": "Demostración",

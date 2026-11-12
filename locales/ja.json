@@ -1,5 +1,6 @@
 {
   "website.title": "Movin' In - オープンソース賃貸物件管理プラットフォーム",
+  "website.description": "Movin' In は、物件、顧客、予約を管理する管理パネル、フロントエンド、賃貸物件用のモバイルアプリを備えたオープンソースかつクロスプラットフォームの賃貸物件管理プラットフォームです。",
   "title": "Movin' In",
   "nav.features": "機能",
   "nav.demo": "デモ",

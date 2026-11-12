@@ -1,5 +1,6 @@
 {
   "website.title": "Movin' In - Plataforma Open Source de Gestão de Propriedades para Aluguel",
+  "website.description": "Movin' In é uma plataforma open source e multiplataforma de gestão de propriedades para aluguel, com um painel administrativo para gerenciar propriedades, clientes e reservas, um frontend web e um aplicativo móvel para alugar propriedades.",
   "title": "Movin' In",
   "nav.features": "Funcionalidades",
   "nav.demo": "Demonstração",
