@@ -1,5 +1,6 @@
 {
   "website.title": "Movin' In - Piattaforma open source per la gestione di immobili in affitto",
+  "website.description": "Movin' In è una piattaforma open source e multipiattaforma per la gestione di immobili in affitto, con un pannello di amministrazione per gestire immobili, clienti e prenotazioni, un frontend e un'app mobile per affittare immobili.",
   "title": "Movin' In",
   "nav.features": "Funzionalità",
   "nav.demo": "Demo",

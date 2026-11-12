@@ -172,6 +172,12 @@ export async function setLang(lang) {
       }
     }
 
+    // Update <meta name="description"> content for localized SEO indexing
+    const metaDesc = document.querySelector('meta[name="description"]')
+    if (metaDesc && translations['website.description']) {
+      metaDesc.setAttribute('content', translations['website.description'])
+    }
+
     // Update URL query param `?lang=xx` without reloading the page
     const url = new URL(window.location)
     url.searchParams.set('lang', lang)
