@@ -177,6 +177,13 @@ export async function setLang(lang) {
     url.searchParams.set('lang', lang)
     window.history.replaceState({}, '', url)
 
+    // Update <link rel="canonical"> so each language variant is self-canonicalized for indexing
+    const canonicalEl = document.querySelector('link[rel="canonical"]')
+    if (canonicalEl) {
+      const canonicalUrl = `https://movin-in.github.io/?lang=${lang}`
+      canonicalEl.setAttribute('href', canonicalUrl)
+    }
+
     // Visually highlight the selected language in the UI
     highlightSelectedLang(lang)
   } catch (err) {
