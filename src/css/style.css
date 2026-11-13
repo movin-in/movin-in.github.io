@@ -14,10 +14,10 @@
   --feature-accent: #1f2933;
   --feature-accent-soft: rgba(139, 188, 245, 0.18);
   --muted: #5b6573;
-  --lang-text-bg: #fff;
+  --lang-text-bg: #ffffff;
   --lang-text: #1f2933;
   --lang-text-hover: #f1f5f9;
-  --lang-text-selected: #fff;
+  --lang-text-selected: #ffffff;
   --lang-border: #e2e8f0;
   --lang-secondary: #2563eb;
   --btn-bg: #1f2933;
@@ -53,7 +53,7 @@
   --lang-text-bg: #1e2127;
   --lang-text: #e6e8eb;
   --lang-text-hover: #2a2e36;
-  --lang-text-selected: #fff;
+  --lang-text-selected: #ffffff;
   --lang-border: #343841;
   --lang-secondary: #2563eb;
   --btn-bg: #f1f2f4;
@@ -247,14 +247,28 @@ nav a:focus {
   font-size: 1.2rem;
   cursor: pointer;
   color: var(--primary-dark);
-  margin-right: 20px;
-  margin-top: 5px;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  margin-right: 12px;
+  margin-top: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#lang-toggle:hover,
+#lang-toggle:focus-visible {
+  background-color: var(--primary-light);
+  color: var(--secondary);
 }
 
 .lang-menu {
   position: absolute;
   top: 100%;
   right: -50%;
+  min-width: 150px;
+  width: max-content;
   margin-top: 0.5rem;
   border: 1px solid var(--lang-border);
   border-radius: 10px;
@@ -303,20 +317,43 @@ nav a:focus {
 .theme-toggle-btn {
   background-color: transparent;
   border: none;
-  margin-right: 10px;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  margin-right: 8px;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .theme-toggle-btn svg {
   stroke: var(--text);
   width: 20px;
   height: 20px;
+  transition: stroke 0.2s ease;
+}
+
+.theme-toggle-btn:hover,
+.theme-toggle-btn:focus-visible {
+  background-color: var(--primary-light);
+}
+
+.theme-toggle-btn:hover svg,
+.theme-toggle-btn:focus-visible svg {
+  stroke: var(--secondary);
 }
 
 @media (max-width: 900px) {
+  header {
+    position: static;
+    background: var(--background);
+    padding: 0.75rem 0;
+  }
+
   .header-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 0.75rem;
   }
 
@@ -383,13 +420,15 @@ nav a:focus {
     position: static;
     display: none;
     flex-direction: column;
+    width: 100%;
     background: var(--background);
-    padding: 1rem 0.5rem;
-    align-items: start;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-md);
+    padding: 1rem 0;
+    align-items: flex-start;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    box-shadow: none;
   }
-
 
   nav.active {
     display: flex;
@@ -397,21 +436,48 @@ nav a:focus {
 
   nav ul {
     flex-direction: column;
-    gap: 1rem;
+    width: 100%;
+    gap: 0.5rem;
   }
 
   nav ul.nav-right {
     flex-direction: row;
+    width: auto;
+    padding-top: 0.5rem;
   }
 
   .lang-switcher {
     order: 1;
-    width: 100%;
+    width: auto;
     margin-left: 0;
     margin-top: 0;
     display: flex;
     justify-content: flex-start;
     gap: 0.5rem;
+  }
+
+  nav>ul:first-child {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  nav ul.nav-right {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    padding-top: 0.5rem;
+  }
+
+  .lang-menu {
+    left: 0;
+    right: auto;
+    min-width: 150px;
+    width: max-content;
+  }
+
+  .hero {
+    padding: 5rem 2rem 6rem;
   }
 }
 
@@ -507,7 +573,7 @@ section h3 {
   color: var(--muted);
 }
 
-.about-section p + p {
+.about-section p+p {
   margin-top: 1rem;
 }
 
@@ -888,7 +954,7 @@ footer a {
   }
 
   .hero {
-    padding: 11rem 1.25rem 5rem;
+    padding: 10rem 1.25rem 5rem;
   }
 
   .hero h2 {

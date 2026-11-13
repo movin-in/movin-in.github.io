@@ -1,7 +1,8 @@
 /**
  * Initializes the hamburger menu toggle.
  * Toggles the 'active' class on the hamburger button and the navigation menu,
- * and updates the aria-expanded attribute for accessibility.
+ * updates the aria-expanded attribute for accessibility, and closes on outside click,
+ * Escape key, or nav link click.
  */
 export function initHamburgerMenu() {
   const hamburger = document.querySelector('.hamburger')
@@ -9,11 +10,42 @@ export function initHamburgerMenu() {
 
   if (!hamburger || !nav) return
 
-  hamburger.addEventListener('click', () => {
+  const closeMenu = () => {
+    hamburger.setAttribute('aria-expanded', 'false')
+    hamburger.classList.remove('active')
+    nav.classList.remove('active')
+  }
+
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation()
     const expanded = hamburger.getAttribute('aria-expanded') === 'true'
     hamburger.setAttribute('aria-expanded', !expanded)
     hamburger.classList.toggle('active')
     nav.classList.toggle('active')
+  })
+
+  // Close menu when clicking any navigation link
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (nav.classList.contains('active')) {
+        closeMenu()
+      }
+    })
+  })
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (nav.classList.contains('active') && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+      closeMenu()
+    }
+  })
+
+  // Close menu on Escape key press
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('active')) {
+      closeMenu()
+      hamburger.focus()
+    }
   })
 }
 
@@ -27,6 +59,8 @@ export function initHamburgerMenu() {
 export function initLanguageMenu(setLang) {
   const langToggle = document.getElementById('lang-toggle')
   const langMenu = document.getElementById('lang-menu')
+  const hamburger = document.querySelector('.hamburger')
+  const nav = document.querySelector('nav')
 
   if (!langToggle || !langMenu) return
 
@@ -44,6 +78,13 @@ export function initLanguageMenu(setLang) {
       }
       langToggle.setAttribute('aria-expanded', 'false')
       langMenu.hidden = true
+
+      // Also close mobile hamburger menu on language change
+      if (hamburger && nav && nav.classList.contains('active')) {
+        hamburger.setAttribute('aria-expanded', 'false')
+        hamburger.classList.remove('active')
+        nav.classList.remove('active')
+      }
     })
   })
 
