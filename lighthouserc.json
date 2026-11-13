@@ -11,6 +11,7 @@
       "preset": "lighthouse:recommended",
       "assertions": {
         "network-dependency-tree-insight": ["warn", { "minScore": 0 }],
+        "forced-reflow-insight": ["warn", { "minScore": 0 }],
         "errors-in-console": "warn"
       }
     },
