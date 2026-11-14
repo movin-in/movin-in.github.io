@@ -34,11 +34,11 @@ export function initHamburgerMenu() {
   })
 
   // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (nav.classList.contains('active') && !nav.contains(e.target) && !hamburger.contains(e.target)) {
-      closeMenu()
-    }
-  })
+  // document.addEventListener('click', (e) => {
+  //   if (nav.classList.contains('active') && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+  //     closeMenu()
+  //   }
+  // })
 
   // Close menu on Escape key press
   document.addEventListener('keydown', (e) => {
@@ -80,11 +80,11 @@ export function initLanguageMenu(setLang) {
       langMenu.hidden = true
 
       // Also close mobile hamburger menu on language change
-      if (hamburger && nav && nav.classList.contains('active')) {
-        hamburger.setAttribute('aria-expanded', 'false')
-        hamburger.classList.remove('active')
-        nav.classList.remove('active')
-      }
+      // if (hamburger && nav && nav.classList.contains('active')) {
+      //   hamburger.setAttribute('aria-expanded', 'false')
+      //   hamburger.classList.remove('active')
+      //   nav.classList.remove('active')
+      // }
     })
   })
 
